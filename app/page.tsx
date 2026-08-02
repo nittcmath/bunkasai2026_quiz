@@ -147,7 +147,7 @@ export default async function HomePage() {
                   <p className="font-semibold">{booth.boothName}</p>
                   <p className="text-xs text-muted-foreground">{booth.description}</p>
                 </div>
-                <span className="text-sm text-muted-foreground">開く</span>
+                <span className="text-sm text-muted-foreground">問題を見る</span>
               </Link>
             ))}
           </CardContent>

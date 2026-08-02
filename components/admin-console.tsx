@@ -146,7 +146,7 @@ export function AdminConsole() {
         </CardHeader>
         <CardContent className="space-y-4">
           <Input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="検索キーワード" />
-          <Button onClick={loadData}>検索実行</Button>
+          <Button onClick={loadData}>ユーザー検索</Button>
           <div className="space-y-2">
             {users.map((user) => (
               <div key={user.userId} className="rounded-2xl border border-border bg-muted/40 p-4">
@@ -157,10 +157,10 @@ export function AdminConsole() {
                   </div>
                   <div className="flex gap-2">
                     <Button size="sm" variant="outline" onClick={() => grantPoints(user.userId)}>
-                      付与
+                      ポイント付与
                     </Button>
                     <Button size="sm" variant="outline" onClick={() => deductPoints(user.userId)}>
-                      減算
+                      ポイント減算
                     </Button>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export function AdminConsole() {
             <Input value={prizeName} onChange={(event) => setPrizeName(event.target.value)} placeholder="景品名" />
             <Input value={cost} onChange={(event) => setCost(event.target.value)} type="number" min="1" placeholder="必要ポイント" />
           </div>
-          <Button onClick={generateToken}>Generate</Button>
+          <Button onClick={generateToken}>交換QRを生成</Button>
           {generatedToken ? (
             <div className="space-y-3">
               <QRCodeBlock value={generatedUrl} />
