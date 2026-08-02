@@ -1,0 +1,1314 @@
+{
+  "users": [
+    {
+      "userId": "f0ffa5ce-cbd0-411b-ba22-617e00006c84",
+      "nickname": "",
+      "createdAt": "2026-08-01T09:17:57.046Z",
+      "lastLogin": "2026-08-01T09:20:36.224Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T09:20:36.224Z"
+    },
+    {
+      "userId": "625984e1-dfe7-4b32-8b34-b156d2500b4f",
+      "nickname": "",
+      "createdAt": "2026-08-01T11:55:26.549Z",
+      "lastLogin": "2026-08-01T11:55:26.549Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T11:55:26.549Z"
+    },
+    {
+      "userId": "a8df3189-7a6c-40d7-b7a2-a11081ea0cdd",
+      "nickname": "",
+      "createdAt": "2026-08-01T11:55:37.005Z",
+      "lastLogin": "2026-08-01T11:55:37.025Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T11:55:37.025Z"
+    },
+    {
+      "userId": "4fc138cb-3eaf-4b1a-81c9-4008289fb673",
+      "nickname": "",
+      "createdAt": "2026-08-01T11:55:39.920Z",
+      "lastLogin": "2026-08-01T11:55:39.930Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T11:55:39.930Z"
+    },
+    {
+      "userId": "86712c5e-a611-44ff-808f-59c7063e0e82",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:01:30.423Z",
+      "lastLogin": "2026-08-01T14:01:30.423Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:01:30.423Z"
+    },
+    {
+      "userId": "954da3b1-7129-4389-a5be-18f78c53b6f5",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:01:35.110Z",
+      "lastLogin": "2026-08-01T14:01:35.119Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T14:01:35.120Z"
+    },
+    {
+      "userId": "22a24e3d-ced4-40a9-bd46-6f6e6db79d77",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:01:40.702Z",
+      "lastLogin": "2026-08-01T14:01:40.717Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:01:40.717Z"
+    },
+    {
+      "userId": "ca0b15b6-d805-42f3-85c2-8a0db1521841",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:07:10.781Z",
+      "lastLogin": "2026-08-01T14:07:10.800Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:07:10.800Z"
+    },
+    {
+      "userId": "3ecece28-808e-4f30-a44c-f62aa80754c2",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:07:22.273Z",
+      "lastLogin": "2026-08-01T14:07:22.273Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:07:22.273Z"
+    },
+    {
+      "userId": "0c0c24c2-7c8d-4288-8390-41d319348ef2",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:07:26.984Z",
+      "lastLogin": "2026-08-01T14:07:26.993Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T14:07:26.994Z"
+    },
+    {
+      "userId": "92df3da7-8942-468e-a3c9-01d4024a1c77",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:07:28.444Z",
+      "lastLogin": "2026-08-01T14:07:28.460Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:07:28.461Z"
+    },
+    {
+      "userId": "06c8a9b7-b6a1-4bcc-9d45-c2ee8099a5ec",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:33:14.629Z",
+      "lastLogin": "2026-08-01T14:33:14.629Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:33:14.629Z"
+    },
+    {
+      "userId": "0d4d3162-b35a-4ca9-bbad-f850a631816e",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:33:25.612Z",
+      "lastLogin": "2026-08-01T14:33:25.625Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T14:33:25.628Z"
+    },
+    {
+      "userId": "61d91f70-4ca4-43fa-a0f2-172acfc41d3a",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:33:27.491Z",
+      "lastLogin": "2026-08-01T14:33:27.503Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:33:27.504Z"
+    },
+    {
+      "userId": "56aa217f-b76b-4bb6-9df7-d48460102326",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:47:37.513Z",
+      "lastLogin": "2026-08-01T14:47:37.552Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:47:37.553Z"
+    },
+    {
+      "userId": "525646cc-b0f6-4897-bf69-a69fa3f56b77",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:48:56.683Z",
+      "lastLogin": "2026-08-01T14:48:56.749Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:48:56.750Z"
+    },
+    {
+      "userId": "05aa0495-8c50-415f-a365-892d8f66695e",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:50:52.489Z",
+      "lastLogin": "2026-08-01T14:50:52.489Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:50:52.489Z"
+    },
+    {
+      "userId": "f6f8864d-f2b6-451d-be74-93ebd8b0247f",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:50:58.042Z",
+      "lastLogin": "2026-08-01T14:50:58.099Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-02"
+      ],
+      "lastActivity": "2026-08-01T14:50:58.099Z"
+    },
+    {
+      "userId": "1795f060-60e4-43ea-9bb3-1cc3c2c27237",
+      "nickname": "",
+      "createdAt": "2026-08-01T14:51:00.384Z",
+      "lastLogin": "2026-08-01T14:51:00.402Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T14:51:00.403Z"
+    },
+    {
+      "userId": "1ac8d53a-1873-4e97-b818-a77309d03f93",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:21:43.276Z",
+      "lastLogin": "2026-08-01T15:21:43.277Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:21:43.277Z"
+    },
+    {
+      "userId": "26922fb3-b0a8-4d54-a0a3-74a265d74706",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:21:47.582Z",
+      "lastLogin": "2026-08-01T15:21:47.591Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T15:21:47.591Z"
+    },
+    {
+      "userId": "2b9753f8-6451-4685-8bc1-1155172c182c",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:21:48.963Z",
+      "lastLogin": "2026-08-01T15:21:48.975Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:21:48.975Z"
+    },
+    {
+      "userId": "dffd55bc-7cf8-42ba-88aa-26e7696de267",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:22:40.664Z",
+      "lastLogin": "2026-08-01T15:22:40.710Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:22:40.711Z"
+    },
+    {
+      "userId": "e683dee4-9989-4a4e-8f96-153ece7ee19a",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:22:58.748Z",
+      "lastLogin": "2026-08-01T15:22:58.768Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:22:58.769Z"
+    },
+    {
+      "userId": "ccfe4a33-6577-4a57-ad3e-38a455279239",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:23:43.546Z",
+      "lastLogin": "2026-08-01T15:23:43.546Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:23:43.546Z"
+    },
+    {
+      "userId": "a6315c65-ac3a-40b2-bcf3-bb9f2157ea86",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:23:46.355Z",
+      "lastLogin": "2026-08-01T15:23:46.363Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T15:23:46.364Z"
+    },
+    {
+      "userId": "6bc477ab-1bce-4f9f-ae83-9f96349be350",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:23:47.952Z",
+      "lastLogin": "2026-08-01T15:23:47.975Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:23:47.975Z"
+    },
+    {
+      "userId": "03b7add3-198a-423d-84d2-04b3b198ce10",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:28:39.361Z",
+      "lastLogin": "2026-08-01T15:28:39.397Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-02"
+      ],
+      "lastActivity": "2026-08-01T15:28:39.397Z"
+    },
+    {
+      "userId": "76e1e519-9e6b-48bd-92e0-da2a755ebb67",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:28:40.468Z",
+      "lastLogin": "2026-08-01T15:28:40.486Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:28:40.486Z"
+    },
+    {
+      "userId": "4e0174c9-adfa-45e2-9a6a-377becb6c7de",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:29:24.273Z",
+      "lastLogin": "2026-08-01T15:29:24.286Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:29:24.286Z"
+    },
+    {
+      "userId": "18a27604-786e-4fbc-b000-fe0ab2293f2b",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:29:39.486Z",
+      "lastLogin": "2026-08-01T15:29:39.486Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:29:39.486Z"
+    },
+    {
+      "userId": "9fb7a346-e614-4dcc-b1d6-1a7a6724b405",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:29:41.767Z",
+      "lastLogin": "2026-08-01T15:29:41.768Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:29:41.768Z"
+    },
+    {
+      "userId": "3b096f2a-0810-410e-b2e7-556d9d4cc341",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:29:47.189Z",
+      "lastLogin": "2026-08-01T15:29:47.201Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T15:29:47.202Z"
+    },
+    {
+      "userId": "13a5e31d-bb68-405b-abc0-5a5725377fd1",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:29:48.844Z",
+      "lastLogin": "2026-08-01T15:29:48.859Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:29:48.859Z"
+    },
+    {
+      "userId": "98a409cd-2a56-45e6-a018-43d32d18fb41",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:36:40.249Z",
+      "lastLogin": "2026-08-01T15:36:40.249Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:36:40.249Z"
+    },
+    {
+      "userId": "1e1b5991-7323-4cf7-bbc6-97ec9ec216bc",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:36:43.313Z",
+      "lastLogin": "2026-08-01T15:36:43.326Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-01T15:36:43.327Z"
+    },
+    {
+      "userId": "f49d41ee-eee3-4baa-bee7-9d4953e8b5b2",
+      "nickname": "",
+      "createdAt": "2026-08-01T15:36:44.347Z",
+      "lastLogin": "2026-08-01T15:36:44.361Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-01T15:36:44.362Z"
+    },
+    {
+      "userId": "6f9efbfd-a01e-445d-bc20-d309776631f9",
+      "nickname": "",
+      "createdAt": "2026-08-02T00:18:29.077Z",
+      "lastLogin": "2026-08-02T00:18:29.077Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-02T00:18:29.077Z"
+    },
+    {
+      "userId": "2aff0b34-357a-48ce-b956-cf8b4b04de9a",
+      "nickname": "",
+      "createdAt": "2026-08-02T00:18:40.164Z",
+      "lastLogin": "2026-08-02T00:18:40.177Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-02T00:18:40.177Z"
+    },
+    {
+      "userId": "cff841e8-6020-44af-993a-b54ebbb177c3",
+      "nickname": "",
+      "createdAt": "2026-08-02T00:18:41.005Z",
+      "lastLogin": "2026-08-02T00:18:41.024Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-02T00:18:41.025Z"
+    }
+  ],
+  "questions": [
+    {
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "title": "綿菓子の色",
+      "difficulty": 1,
+      "point": 1,
+      "questionText": "わたあめ工房で人気の綿菓子の色は何色？",
+      "hint": "看板の色を見てみよう。",
+      "imageUrl": "",
+      "correctAnswer": "pink",
+      "options": [
+        "pink",
+        "blue",
+        "green",
+        "white"
+      ],
+      "createdAt": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "questionId": "q-002",
+      "boothId": "b-01",
+      "title": "砂糖の量",
+      "difficulty": 2,
+      "point": 2,
+      "questionText": "綿菓子 1 個に使う砂糖のイメージはどれ？",
+      "hint": "甘さのインパクトで考えてみよう。",
+      "imageUrl": "",
+      "correctAnswer": "a lot",
+      "options": [
+        "a little",
+        "a lot",
+        "none",
+        "only salt"
+      ],
+      "createdAt": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "questionId": "q-003",
+      "boothId": "b-02",
+      "title": "足音の数",
+      "difficulty": 3,
+      "point": 3,
+      "questionText": "お化け屋敷の入口で鳴る足音は何回？",
+      "hint": "演出のリズムを数えてみよう。",
+      "imageUrl": "",
+      "correctAnswer": "3",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "createdAt": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "questionId": "q-004",
+      "boothId": "b-03",
+      "title": "液体の変化",
+      "difficulty": 4,
+      "point": 4,
+      "questionText": "科学ラボの実験で色が変わる液体は何系？",
+      "hint": "pH の変化を意識しよう。",
+      "imageUrl": "",
+      "correctAnswer": "acid base indicator",
+      "options": [
+        "acid base indicator",
+        "oil",
+        "water",
+        "alcohol"
+      ],
+      "createdAt": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "questionId": "q-005",
+      "boothId": "b-03",
+      "title": "ラボの法則",
+      "difficulty": 5,
+      "point": 5,
+      "questionText": "実験で大切な安全装備は何？",
+      "hint": "目を守るものを思い出そう。",
+      "imageUrl": "",
+      "correctAnswer": "goggles",
+      "options": [
+        "goggles",
+        "sandals",
+        "cap",
+        "gloves only"
+      ],
+      "createdAt": "2026-07-01T00:00:00.000Z"
+    }
+  ],
+  "booths": [
+    {
+      "boothId": "b-01",
+      "boothName": "わたあめ工房",
+      "description": "甘い香りの模擬店。QR を読み取って挑戦しよう。",
+      "location": "体育館前"
+    },
+    {
+      "boothId": "b-02",
+      "boothName": "お化け屋敷",
+      "description": "不気味な演出の中に隠れたクイズを解こう。",
+      "location": "旧校舎 2F"
+    },
+    {
+      "boothId": "b-03",
+      "boothName": "科学ラボ",
+      "description": "理科室を使った体験型アトラクション。",
+      "location": "理科室"
+    }
+  ],
+  "answers": [],
+  "questionViews": [
+    {
+      "viewId": "12f13051-2804-4a33-99bc-69ab7cc1df48",
+      "userId": "f0ffa5ce-cbd0-411b-ba22-617e00006c84",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T09:19:59.721Z"
+    },
+    {
+      "viewId": "005949a5-caa4-4f40-b17a-022976160f8b",
+      "userId": "4fc138cb-3eaf-4b1a-81c9-4008289fb673",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T11:55:39.930Z"
+    },
+    {
+      "viewId": "c8f7b5d7-f540-4f33-8767-683553c4fa3e",
+      "userId": "22a24e3d-ced4-40a9-bd46-6f6e6db79d77",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:01:40.717Z"
+    },
+    {
+      "viewId": "cb39e12b-b942-4b42-9ce9-4eb574fef405",
+      "userId": "ca0b15b6-d805-42f3-85c2-8a0db1521841",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:07:10.800Z"
+    },
+    {
+      "viewId": "674b2625-1fc5-432a-8036-e7fbcd7a60d3",
+      "userId": "92df3da7-8942-468e-a3c9-01d4024a1c77",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:07:28.460Z"
+    },
+    {
+      "viewId": "dcf06906-b059-4fac-81bd-fa9946c05c47",
+      "userId": "61d91f70-4ca4-43fa-a0f2-172acfc41d3a",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:33:27.504Z"
+    },
+    {
+      "viewId": "c77aece8-9695-44f5-aef9-311939f69d36",
+      "userId": "56aa217f-b76b-4bb6-9df7-d48460102326",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:47:37.553Z"
+    },
+    {
+      "viewId": "5ef1a7ad-a184-4726-88ac-e531dfba1004",
+      "userId": "525646cc-b0f6-4897-bf69-a69fa3f56b77",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:48:56.750Z"
+    },
+    {
+      "viewId": "2ca70aa8-147b-4d19-9db3-af765965f7eb",
+      "userId": "1795f060-60e4-43ea-9bb3-1cc3c2c27237",
+      "questionId": "q-003",
+      "boothId": "b-02",
+      "timestamp": "2026-08-01T14:51:00.403Z"
+    },
+    {
+      "viewId": "2acdb7c3-a85f-4f24-ab1e-113d6bba92b6",
+      "userId": "2b9753f8-6451-4685-8bc1-1155172c182c",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:21:48.975Z"
+    },
+    {
+      "viewId": "1faf8afa-9978-4498-9e46-ce48e63b13dd",
+      "userId": "dffd55bc-7cf8-42ba-88aa-26e7696de267",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:22:40.711Z"
+    },
+    {
+      "viewId": "1dcb1231-ec99-4027-881a-b7000fd1fb7c",
+      "userId": "e683dee4-9989-4a4e-8f96-153ece7ee19a",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:22:58.769Z"
+    },
+    {
+      "viewId": "144fdc83-ba0e-4779-a859-a2f51be848aa",
+      "userId": "6bc477ab-1bce-4f9f-ae83-9f96349be350",
+      "questionId": "q-002",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:23:47.975Z"
+    },
+    {
+      "viewId": "b35eafb6-c9e1-462e-b258-b53b6c1f9e98",
+      "userId": "76e1e519-9e6b-48bd-92e0-da2a755ebb67",
+      "questionId": "q-003",
+      "boothId": "b-02",
+      "timestamp": "2026-08-01T15:28:40.486Z"
+    },
+    {
+      "viewId": "12ff87d7-63c3-4667-853e-d1f0458e2b6f",
+      "userId": "4e0174c9-adfa-45e2-9a6a-377becb6c7de",
+      "questionId": "q-003",
+      "boothId": "b-02",
+      "timestamp": "2026-08-01T15:29:24.286Z"
+    },
+    {
+      "viewId": "63a94451-b83b-4718-ba15-c5b0457e9f49",
+      "userId": "13a5e31d-bb68-405b-abc0-5a5725377fd1",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:29:48.859Z"
+    },
+    {
+      "viewId": "3ff09dd2-bde0-4762-b59d-a0d64bb21423",
+      "userId": "f49d41ee-eee3-4baa-bee7-9d4953e8b5b2",
+      "questionId": "q-002",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:36:44.362Z"
+    },
+    {
+      "viewId": "882f71a7-208e-46dc-9d54-b2ff21706504",
+      "userId": "cff841e8-6020-44af-993a-b54ebbb177c3",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T00:18:41.025Z"
+    }
+  ],
+  "boothVisits": [
+    {
+      "visitId": "980d55c2-e74e-43aa-9c7e-dd8f58d718ba",
+      "userId": "f0ffa5ce-cbd0-411b-ba22-617e00006c84",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T09:19:57.084Z"
+    },
+    {
+      "visitId": "7435577c-514c-4cf8-9da5-a467910801c6",
+      "userId": "f0ffa5ce-cbd0-411b-ba22-617e00006c84",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T09:20:17.735Z"
+    },
+    {
+      "visitId": "2d8287bb-5eea-4d2c-af26-f72e60e20115",
+      "userId": "a8df3189-7a6c-40d7-b7a2-a11081ea0cdd",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T11:55:37.025Z"
+    },
+    {
+      "visitId": "6abc6c6d-9050-4811-aa85-c6c80ecc4ba3",
+      "userId": "954da3b1-7129-4389-a5be-18f78c53b6f5",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:01:35.120Z"
+    },
+    {
+      "visitId": "690e86dd-4787-4b03-b5af-e12b954fa234",
+      "userId": "0c0c24c2-7c8d-4288-8390-41d319348ef2",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:07:26.994Z"
+    },
+    {
+      "visitId": "16b21a48-e9a9-4849-8a8f-65a33c02db1d",
+      "userId": "0d4d3162-b35a-4ca9-bbad-f850a631816e",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T14:33:25.628Z"
+    },
+    {
+      "visitId": "541ef554-2760-428b-b5ff-43560936ce49",
+      "userId": "f6f8864d-f2b6-451d-be74-93ebd8b0247f",
+      "boothId": "b-02",
+      "timestamp": "2026-08-01T14:50:58.099Z"
+    },
+    {
+      "visitId": "a46fee54-7075-4ad9-97c7-4703f2a28a15",
+      "userId": "26922fb3-b0a8-4d54-a0a3-74a265d74706",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:21:47.591Z"
+    },
+    {
+      "visitId": "d728eadb-7567-48e0-8529-5d376c81cec8",
+      "userId": "a6315c65-ac3a-40b2-bcf3-bb9f2157ea86",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:23:46.364Z"
+    },
+    {
+      "visitId": "faebf96a-876b-430c-9c80-10b88625c872",
+      "userId": "03b7add3-198a-423d-84d2-04b3b198ce10",
+      "boothId": "b-02",
+      "timestamp": "2026-08-01T15:28:39.397Z"
+    },
+    {
+      "visitId": "bc47080d-6bb0-4ade-b39e-a7e0bd26fd35",
+      "userId": "3b096f2a-0810-410e-b2e7-556d9d4cc341",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:29:47.202Z"
+    },
+    {
+      "visitId": "51053fa9-542d-444b-8ac9-de37ad90035d",
+      "userId": "1e1b5991-7323-4cf7-bbc6-97ec9ec216bc",
+      "boothId": "b-01",
+      "timestamp": "2026-08-01T15:36:43.327Z"
+    },
+    {
+      "visitId": "928a3d9f-4b5f-4b61-9aa3-81f4126682d7",
+      "userId": "2aff0b34-357a-48ce-b956-cf8b4b04de9a",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T00:18:40.177Z"
+    }
+  ],
+  "exchangeTokens": [],
+  "exchanges": [],
+  "adminLogs": [
+    {
+      "logId": "ffa28085-7571-477e-9c4b-4c2b678d0eda",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:17:57.047Z"
+    },
+    {
+      "logId": "65d0ec5f-82ae-49ea-8c98-1144d6d50ec0",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:18:09.004Z"
+    },
+    {
+      "logId": "30c749a6-4e07-4ae4-acb3-474d015f0bdb",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:18:14.365Z"
+    },
+    {
+      "logId": "d4dcce4c-e885-49fd-ba7b-4c1ea7b31aad",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:18:19.627Z"
+    },
+    {
+      "logId": "01b5a8f0-0ab0-4ee2-a584-34533c78580e",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:19:52.394Z"
+    },
+    {
+      "logId": "26711589-497d-4461-a06f-2fd23262afc0",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:19:57.075Z"
+    },
+    {
+      "logId": "4361e041-c335-4f25-ad32-4e36280e1d64",
+      "adminAction": "recordVisit",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 visited b-01",
+      "timestamp": "2026-08-01T09:19:57.084Z"
+    },
+    {
+      "logId": "f9801e11-e6fa-46af-9dd6-f5ffbeddf331",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:19:59.710Z"
+    },
+    {
+      "logId": "ec9eec07-a105-40ef-acaa-b0e6d1e1516a",
+      "adminAction": "recordQuestionOpen",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 viewed q-001",
+      "timestamp": "2026-08-01T09:19:59.721Z"
+    },
+    {
+      "logId": "dcbdf556-349c-4687-8d1d-f57c8f48b77c",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:20:17.727Z"
+    },
+    {
+      "logId": "b4e695d5-413f-4844-9438-5babb0fb897c",
+      "adminAction": "recordVisit",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 visited b-01",
+      "timestamp": "2026-08-01T09:20:17.735Z"
+    },
+    {
+      "logId": "05b82b23-3487-4c38-a31e-c806f41be732",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:20:21.091Z"
+    },
+    {
+      "logId": "054a23ca-5e98-48a0-8e33-805faba1f348",
+      "adminAction": "registerUser",
+      "detail": "f0ffa5ce-cbd0-411b-ba22-617e00006c84 nickname=empty",
+      "timestamp": "2026-08-01T09:20:36.224Z"
+    },
+    {
+      "logId": "e2a90aaa-543a-4375-bd82-c0613084de28",
+      "adminAction": "registerUser",
+      "detail": "625984e1-dfe7-4b32-8b34-b156d2500b4f nickname=empty",
+      "timestamp": "2026-08-01T11:55:26.549Z"
+    },
+    {
+      "logId": "9a3e2162-9906-4aa6-ac69-82efe1f8f6e7",
+      "adminAction": "registerUser",
+      "detail": "a8df3189-7a6c-40d7-b7a2-a11081ea0cdd nickname=empty",
+      "timestamp": "2026-08-01T11:55:37.005Z"
+    },
+    {
+      "logId": "4d0dd948-3dbb-4101-a61e-d1e4d23531f6",
+      "adminAction": "recordVisit",
+      "detail": "a8df3189-7a6c-40d7-b7a2-a11081ea0cdd visited b-01",
+      "timestamp": "2026-08-01T11:55:37.025Z"
+    },
+    {
+      "logId": "3c864ad6-3655-43e8-9dbd-58258e40d969",
+      "adminAction": "registerUser",
+      "detail": "4fc138cb-3eaf-4b1a-81c9-4008289fb673 nickname=empty",
+      "timestamp": "2026-08-01T11:55:39.920Z"
+    },
+    {
+      "logId": "10e1aee5-9027-472d-bd2d-92aa8e517030",
+      "adminAction": "recordQuestionOpen",
+      "detail": "4fc138cb-3eaf-4b1a-81c9-4008289fb673 viewed q-001",
+      "timestamp": "2026-08-01T11:55:39.930Z"
+    },
+    {
+      "logId": "d96bb46b-5fb6-428c-92b1-48656918ca28",
+      "adminAction": "registerUser",
+      "detail": "86712c5e-a611-44ff-808f-59c7063e0e82 nickname=empty",
+      "timestamp": "2026-08-01T14:01:30.423Z"
+    },
+    {
+      "logId": "d5072f84-9cbf-4c6f-8389-e1c532a67d4a",
+      "adminAction": "registerUser",
+      "detail": "954da3b1-7129-4389-a5be-18f78c53b6f5 nickname=empty",
+      "timestamp": "2026-08-01T14:01:35.110Z"
+    },
+    {
+      "logId": "65a076b3-faeb-4964-96e1-c22d577a1ecd",
+      "adminAction": "recordVisit",
+      "detail": "954da3b1-7129-4389-a5be-18f78c53b6f5 visited b-01",
+      "timestamp": "2026-08-01T14:01:35.120Z"
+    },
+    {
+      "logId": "158e9b8a-30fd-4a91-ac6e-cc80ef86dedd",
+      "adminAction": "registerUser",
+      "detail": "22a24e3d-ced4-40a9-bd46-6f6e6db79d77 nickname=empty",
+      "timestamp": "2026-08-01T14:01:40.703Z"
+    },
+    {
+      "logId": "e40c1497-895b-4f9f-8a9c-b0557f57fb2a",
+      "adminAction": "recordQuestionOpen",
+      "detail": "22a24e3d-ced4-40a9-bd46-6f6e6db79d77 viewed q-001",
+      "timestamp": "2026-08-01T14:01:40.717Z"
+    },
+    {
+      "logId": "efcad968-3d59-4330-af8c-a8dba0d01bf1",
+      "adminAction": "registerUser",
+      "detail": "ca0b15b6-d805-42f3-85c2-8a0db1521841 nickname=empty",
+      "timestamp": "2026-08-01T14:07:10.782Z"
+    },
+    {
+      "logId": "3f85d7f9-6b96-4bac-9b9e-efe2a77c265f",
+      "adminAction": "recordQuestionOpen",
+      "detail": "ca0b15b6-d805-42f3-85c2-8a0db1521841 viewed q-001",
+      "timestamp": "2026-08-01T14:07:10.800Z"
+    },
+    {
+      "logId": "f2c05d85-6477-41a5-a294-5ca655cf487e",
+      "adminAction": "registerUser",
+      "detail": "3ecece28-808e-4f30-a44c-f62aa80754c2 nickname=empty",
+      "timestamp": "2026-08-01T14:07:22.273Z"
+    },
+    {
+      "logId": "b0257bf8-5911-41b7-8a6f-cd6720bb952b",
+      "adminAction": "registerUser",
+      "detail": "0c0c24c2-7c8d-4288-8390-41d319348ef2 nickname=empty",
+      "timestamp": "2026-08-01T14:07:26.984Z"
+    },
+    {
+      "logId": "8ed347ea-7cc3-4feb-959b-ba6b8a4b9865",
+      "adminAction": "recordVisit",
+      "detail": "0c0c24c2-7c8d-4288-8390-41d319348ef2 visited b-01",
+      "timestamp": "2026-08-01T14:07:26.994Z"
+    },
+    {
+      "logId": "085d1577-1e18-49d5-b8fe-4bd71e1ffea9",
+      "adminAction": "registerUser",
+      "detail": "92df3da7-8942-468e-a3c9-01d4024a1c77 nickname=empty",
+      "timestamp": "2026-08-01T14:07:28.445Z"
+    },
+    {
+      "logId": "8d2cda69-b533-415f-bc13-923a4e3ea4bb",
+      "adminAction": "recordQuestionOpen",
+      "detail": "92df3da7-8942-468e-a3c9-01d4024a1c77 viewed q-001",
+      "timestamp": "2026-08-01T14:07:28.461Z"
+    },
+    {
+      "logId": "6b2619a1-afbe-4ee6-b8de-5b44fd5b94f6",
+      "adminAction": "registerUser",
+      "detail": "06c8a9b7-b6a1-4bcc-9d45-c2ee8099a5ec nickname=empty",
+      "timestamp": "2026-08-01T14:33:14.629Z"
+    },
+    {
+      "logId": "a3a134f6-9be5-4386-b879-f10aec6718eb",
+      "adminAction": "registerUser",
+      "detail": "0d4d3162-b35a-4ca9-bbad-f850a631816e nickname=empty",
+      "timestamp": "2026-08-01T14:33:25.613Z"
+    },
+    {
+      "logId": "b1376136-5f7c-41cd-9ec3-0bcd7ba5ed80",
+      "adminAction": "recordVisit",
+      "detail": "0d4d3162-b35a-4ca9-bbad-f850a631816e visited b-01",
+      "timestamp": "2026-08-01T14:33:25.628Z"
+    },
+    {
+      "logId": "5affe047-4b0e-4daa-b808-8cb7ee24b501",
+      "adminAction": "registerUser",
+      "detail": "61d91f70-4ca4-43fa-a0f2-172acfc41d3a nickname=empty",
+      "timestamp": "2026-08-01T14:33:27.491Z"
+    },
+    {
+      "logId": "0552fa24-9478-4f4b-90a5-8c91e021379a",
+      "adminAction": "recordQuestionOpen",
+      "detail": "61d91f70-4ca4-43fa-a0f2-172acfc41d3a viewed q-001",
+      "timestamp": "2026-08-01T14:33:27.504Z"
+    },
+    {
+      "logId": "f69b550e-80d8-4db9-8cf6-e0d345213e59",
+      "adminAction": "registerUser",
+      "detail": "56aa217f-b76b-4bb6-9df7-d48460102326 nickname=empty",
+      "timestamp": "2026-08-01T14:47:37.514Z"
+    },
+    {
+      "logId": "82472c04-73b0-4723-a1b2-fbdceebf04e3",
+      "adminAction": "recordQuestionOpen",
+      "detail": "56aa217f-b76b-4bb6-9df7-d48460102326 viewed q-001",
+      "timestamp": "2026-08-01T14:47:37.553Z"
+    },
+    {
+      "logId": "bddbe0ec-99e3-4d9b-b97d-aa736dbbfcb2",
+      "adminAction": "registerUser",
+      "detail": "525646cc-b0f6-4897-bf69-a69fa3f56b77 nickname=empty",
+      "timestamp": "2026-08-01T14:48:56.684Z"
+    },
+    {
+      "logId": "fb65e287-890f-4607-b97b-8498fb74b091",
+      "adminAction": "recordQuestionOpen",
+      "detail": "525646cc-b0f6-4897-bf69-a69fa3f56b77 viewed q-001",
+      "timestamp": "2026-08-01T14:48:56.750Z"
+    },
+    {
+      "logId": "bcb0b7eb-1844-4aad-be96-bd6ec4c200b8",
+      "adminAction": "registerUser",
+      "detail": "05aa0495-8c50-415f-a365-892d8f66695e nickname=empty",
+      "timestamp": "2026-08-01T14:50:52.489Z"
+    },
+    {
+      "logId": "ae14df67-3d86-42f4-ba33-b6f2a91b7bab",
+      "adminAction": "registerUser",
+      "detail": "f6f8864d-f2b6-451d-be74-93ebd8b0247f nickname=empty",
+      "timestamp": "2026-08-01T14:50:58.043Z"
+    },
+    {
+      "logId": "d950c69f-7c83-4a45-967d-a1a5e29d301b",
+      "adminAction": "recordVisit",
+      "detail": "f6f8864d-f2b6-451d-be74-93ebd8b0247f visited b-02",
+      "timestamp": "2026-08-01T14:50:58.099Z"
+    },
+    {
+      "logId": "8c3a3811-cdd1-40c1-bd4a-1fd876bade6e",
+      "adminAction": "registerUser",
+      "detail": "1795f060-60e4-43ea-9bb3-1cc3c2c27237 nickname=empty",
+      "timestamp": "2026-08-01T14:51:00.384Z"
+    },
+    {
+      "logId": "9b8baffc-3186-4e6c-90d7-cf92ecc75242",
+      "adminAction": "recordQuestionOpen",
+      "detail": "1795f060-60e4-43ea-9bb3-1cc3c2c27237 viewed q-003",
+      "timestamp": "2026-08-01T14:51:00.403Z"
+    },
+    {
+      "logId": "df30152d-e11e-42ab-8278-4e6637b8abe1",
+      "adminAction": "registerUser",
+      "detail": "1ac8d53a-1873-4e97-b818-a77309d03f93 nickname=empty",
+      "timestamp": "2026-08-01T15:21:43.277Z"
+    },
+    {
+      "logId": "7ae6de32-d946-4e54-b8a8-e9513ceda2bc",
+      "adminAction": "registerUser",
+      "detail": "26922fb3-b0a8-4d54-a0a3-74a265d74706 nickname=empty",
+      "timestamp": "2026-08-01T15:21:47.583Z"
+    },
+    {
+      "logId": "828631f6-69f5-4635-8b6d-246c82b48b70",
+      "adminAction": "recordVisit",
+      "detail": "26922fb3-b0a8-4d54-a0a3-74a265d74706 visited b-01",
+      "timestamp": "2026-08-01T15:21:47.591Z"
+    },
+    {
+      "logId": "a321545c-2164-4ac9-92c9-22f9f2e7d5c5",
+      "adminAction": "registerUser",
+      "detail": "2b9753f8-6451-4685-8bc1-1155172c182c nickname=empty",
+      "timestamp": "2026-08-01T15:21:48.963Z"
+    },
+    {
+      "logId": "1720db94-7359-42cf-8ae7-af6fec521a34",
+      "adminAction": "recordQuestionOpen",
+      "detail": "2b9753f8-6451-4685-8bc1-1155172c182c viewed q-001",
+      "timestamp": "2026-08-01T15:21:48.975Z"
+    },
+    {
+      "logId": "ac855e59-79fe-4d12-bc22-9c65c738a200",
+      "adminAction": "registerUser",
+      "detail": "dffd55bc-7cf8-42ba-88aa-26e7696de267 nickname=empty",
+      "timestamp": "2026-08-01T15:22:40.664Z"
+    },
+    {
+      "logId": "e61f61b3-191b-4f56-b980-b834502b6683",
+      "adminAction": "recordQuestionOpen",
+      "detail": "dffd55bc-7cf8-42ba-88aa-26e7696de267 viewed q-001",
+      "timestamp": "2026-08-01T15:22:40.711Z"
+    },
+    {
+      "logId": "c42a35f3-ab5a-4319-9e52-8c1bc47eec7d",
+      "adminAction": "registerUser",
+      "detail": "e683dee4-9989-4a4e-8f96-153ece7ee19a nickname=empty",
+      "timestamp": "2026-08-01T15:22:58.748Z"
+    },
+    {
+      "logId": "58c1abec-4f53-417d-a86d-7b43c45c5a53",
+      "adminAction": "recordQuestionOpen",
+      "detail": "e683dee4-9989-4a4e-8f96-153ece7ee19a viewed q-001",
+      "timestamp": "2026-08-01T15:22:58.769Z"
+    },
+    {
+      "logId": "52dc9eab-7946-42d2-8c17-bc0a5459d6ab",
+      "adminAction": "registerUser",
+      "detail": "ccfe4a33-6577-4a57-ad3e-38a455279239 nickname=empty",
+      "timestamp": "2026-08-01T15:23:43.547Z"
+    },
+    {
+      "logId": "30b0a6b2-1b99-4a70-a07d-4ce331a7a9e9",
+      "adminAction": "registerUser",
+      "detail": "a6315c65-ac3a-40b2-bcf3-bb9f2157ea86 nickname=empty",
+      "timestamp": "2026-08-01T15:23:46.355Z"
+    },
+    {
+      "logId": "bce57dbb-5573-4db3-925f-3426aa71bfd8",
+      "adminAction": "recordVisit",
+      "detail": "a6315c65-ac3a-40b2-bcf3-bb9f2157ea86 visited b-01",
+      "timestamp": "2026-08-01T15:23:46.364Z"
+    },
+    {
+      "logId": "9a957718-a1e9-4b09-9fe5-0a6f3de6aa48",
+      "adminAction": "registerUser",
+      "detail": "6bc477ab-1bce-4f9f-ae83-9f96349be350 nickname=empty",
+      "timestamp": "2026-08-01T15:23:47.952Z"
+    },
+    {
+      "logId": "05e13b0d-ce6c-4e08-a8b5-043c9492ada8",
+      "adminAction": "recordQuestionOpen",
+      "detail": "6bc477ab-1bce-4f9f-ae83-9f96349be350 viewed q-002",
+      "timestamp": "2026-08-01T15:23:47.975Z"
+    },
+    {
+      "logId": "b8a11b25-6901-44d1-8803-716aadc5458c",
+      "adminAction": "registerUser",
+      "detail": "03b7add3-198a-423d-84d2-04b3b198ce10 nickname=empty",
+      "timestamp": "2026-08-01T15:28:39.362Z"
+    },
+    {
+      "logId": "f00a7080-4491-4ccb-85d1-3f5ea959d6f4",
+      "adminAction": "recordVisit",
+      "detail": "03b7add3-198a-423d-84d2-04b3b198ce10 visited b-02",
+      "timestamp": "2026-08-01T15:28:39.398Z"
+    },
+    {
+      "logId": "3c123de2-4ad9-45bb-931a-b23755fa23d5",
+      "adminAction": "registerUser",
+      "detail": "76e1e519-9e6b-48bd-92e0-da2a755ebb67 nickname=empty",
+      "timestamp": "2026-08-01T15:28:40.468Z"
+    },
+    {
+      "logId": "2eb70d8d-9364-4539-9c5b-aaa617b3de54",
+      "adminAction": "recordQuestionOpen",
+      "detail": "76e1e519-9e6b-48bd-92e0-da2a755ebb67 viewed q-003",
+      "timestamp": "2026-08-01T15:28:40.486Z"
+    },
+    {
+      "logId": "392e31f7-68ba-45ef-b8fd-7ad62220bbcc",
+      "adminAction": "registerUser",
+      "detail": "4e0174c9-adfa-45e2-9a6a-377becb6c7de nickname=empty",
+      "timestamp": "2026-08-01T15:29:24.273Z"
+    },
+    {
+      "logId": "4869b758-b85a-4628-8bc6-355338626bdb",
+      "adminAction": "recordQuestionOpen",
+      "detail": "4e0174c9-adfa-45e2-9a6a-377becb6c7de viewed q-003",
+      "timestamp": "2026-08-01T15:29:24.286Z"
+    },
+    {
+      "logId": "0de83d29-1b79-46bf-808e-972e28ce56da",
+      "adminAction": "registerUser",
+      "detail": "18a27604-786e-4fbc-b000-fe0ab2293f2b nickname=empty",
+      "timestamp": "2026-08-01T15:29:39.487Z"
+    },
+    {
+      "logId": "a05c0431-1b0f-43e8-9316-dc19d9e8e2ef",
+      "adminAction": "registerUser",
+      "detail": "9fb7a346-e614-4dcc-b1d6-1a7a6724b405 nickname=empty",
+      "timestamp": "2026-08-01T15:29:41.768Z"
+    },
+    {
+      "logId": "8b566651-afe5-41cd-a2b7-dd31ffb0b8e5",
+      "adminAction": "registerUser",
+      "detail": "3b096f2a-0810-410e-b2e7-556d9d4cc341 nickname=empty",
+      "timestamp": "2026-08-01T15:29:47.189Z"
+    },
+    {
+      "logId": "64991f34-91a0-4731-a03f-3d5dbd672af7",
+      "adminAction": "recordVisit",
+      "detail": "3b096f2a-0810-410e-b2e7-556d9d4cc341 visited b-01",
+      "timestamp": "2026-08-01T15:29:47.202Z"
+    },
+    {
+      "logId": "7b0b592e-3047-4be1-8174-bfa24389a121",
+      "adminAction": "registerUser",
+      "detail": "13a5e31d-bb68-405b-abc0-5a5725377fd1 nickname=empty",
+      "timestamp": "2026-08-01T15:29:48.844Z"
+    },
+    {
+      "logId": "e5ff35b4-aec6-4c4d-9cb5-18bead1db930",
+      "adminAction": "recordQuestionOpen",
+      "detail": "13a5e31d-bb68-405b-abc0-5a5725377fd1 viewed q-001",
+      "timestamp": "2026-08-01T15:29:48.859Z"
+    },
+    {
+      "logId": "60dd5aad-6002-4af8-9e4c-acd9280b8d64",
+      "adminAction": "registerUser",
+      "detail": "98a409cd-2a56-45e6-a018-43d32d18fb41 nickname=empty",
+      "timestamp": "2026-08-01T15:36:40.250Z"
+    },
+    {
+      "logId": "1ac3bfe6-cc74-4df1-9a36-5a03aaa95024",
+      "adminAction": "registerUser",
+      "detail": "1e1b5991-7323-4cf7-bbc6-97ec9ec216bc nickname=empty",
+      "timestamp": "2026-08-01T15:36:43.313Z"
+    },
+    {
+      "logId": "dd0b8d35-3a8b-4d0d-8fe5-0592673863a9",
+      "adminAction": "recordVisit",
+      "detail": "1e1b5991-7323-4cf7-bbc6-97ec9ec216bc visited b-01",
+      "timestamp": "2026-08-01T15:36:43.327Z"
+    },
+    {
+      "logId": "5255daed-4876-4d95-8669-0e3b944d4684",
+      "adminAction": "registerUser",
+      "detail": "f49d41ee-eee3-4baa-bee7-9d4953e8b5b2 nickname=empty",
+      "timestamp": "2026-08-01T15:36:44.348Z"
+    },
+    {
+      "logId": "5c4d7c47-6276-4847-a45b-573c6425f743",
+      "adminAction": "recordQuestionOpen",
+      "detail": "f49d41ee-eee3-4baa-bee7-9d4953e8b5b2 viewed q-002",
+      "timestamp": "2026-08-01T15:36:44.362Z"
+    },
+    {
+      "logId": "91cc2e07-d048-4687-8545-ce0d4cd1503d",
+      "adminAction": "registerUser",
+      "detail": "6f9efbfd-a01e-445d-bc20-d309776631f9 nickname=empty",
+      "timestamp": "2026-08-02T00:18:29.077Z"
+    },
+    {
+      "logId": "c933c21b-6d61-440f-88da-dcecda917f74",
+      "adminAction": "registerUser",
+      "detail": "2aff0b34-357a-48ce-b956-cf8b4b04de9a nickname=empty",
+      "timestamp": "2026-08-02T00:18:40.164Z"
+    },
+    {
+      "logId": "2da83266-8267-4887-88d8-44b509af9362",
+      "adminAction": "recordVisit",
+      "detail": "2aff0b34-357a-48ce-b956-cf8b4b04de9a visited b-01",
+      "timestamp": "2026-08-02T00:18:40.177Z"
+    },
+    {
+      "logId": "5a12fb11-249f-4891-9f07-47b45f9362ec",
+      "adminAction": "registerUser",
+      "detail": "cff841e8-6020-44af-993a-b54ebbb177c3 nickname=empty",
+      "timestamp": "2026-08-02T00:18:41.005Z"
+    },
+    {
+      "logId": "d1b04a4a-afd6-4761-9012-6e2ba3e1bcdd",
+      "adminAction": "recordQuestionOpen",
+      "detail": "cff841e8-6020-44af-993a-b54ebbb177c3 viewed q-001",
+      "timestamp": "2026-08-02T00:18:41.025Z"
+    }
+  ],
+  "analytics": []
+}
