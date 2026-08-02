@@ -22,7 +22,7 @@ export default function Icon() {
           fontSize: 24,
         }}
       >
-        Q
+        祭
       </div>
     ),
     {

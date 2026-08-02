@@ -11,6 +11,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
   const { questionId } = await params;
   const cookieStore = await cookies();
   const visitorId = cookieStore.get('visitorId')?.value ?? '';
+  const nicknameCookie = cookieStore.get('nickname')?.value ?? '';
   if (visitorId) {
     await registerUser(visitorId);
   }
@@ -24,6 +25,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
   }
   const booth = db.booths.find((item) => item.boothId === question.boothId);
   const user = visitorId ? db.users.find((item) => item.userId === visitorId) : null;
+  const initialNickname = user?.nickname || nicknameCookie;
   const solved = db.answers.some((answer) => answer.userId === visitorId && answer.questionId === question.questionId && answer.isCorrect);
 
   return (
@@ -62,7 +64,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
           <CardDescription>初回回答時はニックネーム登録を求めます。</CardDescription>
         </CardHeader>
         <CardContent>
-          <AnswerForm visitorId={visitorId} question={question} initialNickname={user?.nickname ?? ''} />
+          <AnswerForm visitorId={visitorId} question={question} initialNickname={initialNickname} />
         </CardContent>
       </Card>
     </div>

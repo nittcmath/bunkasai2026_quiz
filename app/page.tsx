@@ -12,6 +12,7 @@ import type { Route } from "next";
 export default async function HomePage() {
   const cookieStore = await cookies();
   const visitorId = cookieStore.get('visitorId')?.value ?? '';
+  const nicknameCookie = cookieStore.get('nickname')?.value ?? '';
   if (visitorId) {
     await registerUser(visitorId);
   }
@@ -24,6 +25,8 @@ export default async function HomePage() {
   const ranking = rankingResponse.data?.top100 ?? [];
   const history = historyResponse?.data?.history;
   const questionViews = visitorId ? buildQuestionViewHistory(db, visitorId) : [];
+  const userNickname = user?.nickname || nicknameCookie;
+  const canShowQuestionLinks = Boolean(visitorId && db.booths.length && user?.visitedBooths.length === db.booths.length);
   const recentActivity = [
     ...(history?.answers ?? []).map((answer) => ({ type: answer.isCorrect ? '正解' : '回答', title: answer.questionId, time: answer.timestamp })),
     ...(history?.boothVisits ?? []).map((visit) => ({ type: '訪問', title: visit.boothId, time: visit.timestamp })),
@@ -61,7 +64,7 @@ export default async function HomePage() {
         <Card>
           <CardHeader>
             <CardTitle>あなたの状態</CardTitle>
-            <CardDescription>{user?.nickname ? `${user.nickname} さん` : '初回アクセスの来場者'}</CardDescription>
+            <CardDescription>{userNickname ? `${userNickname} さん` : '初回アクセスの来場者'}</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-3">
             <Stat label="所有ポイント" value={formatPoints(user?.currentPoints ?? 0)} />
@@ -137,19 +140,27 @@ export default async function HomePage() {
         <Card>
           <CardHeader>
             <CardTitle>回答スタート</CardTitle>
-            <CardDescription>模擬店 QR から問題一覧へ進んでください。</CardDescription>
+            <CardDescription>各模擬店の QR を一度通過すると問題を表示します。</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
-            <Separator />
-            {(db.booths ?? []).map((booth) => (
-              <Link key={booth.boothId} href={`/booth/${booth.boothId}`} className="flex items-center justify-between rounded-2xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:bg-muted">
-                <div>
-                  <p className="font-semibold">{booth.boothName}</p>
-                  <p className="text-xs text-muted-foreground">{booth.description}</p>
-                </div>
-                <span className="text-sm text-muted-foreground">問題を見る</span>
-              </Link>
-            ))}
+            {canShowQuestionLinks ? (
+              <>
+                <Separator />
+                {(db.booths ?? []).map((booth) => (
+                  <Link key={booth.boothId} href={`/booth/${booth.boothId}`} className="flex items-center justify-between rounded-2xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:bg-muted">
+                    <div>
+                      <p className="font-semibold">{booth.boothName}</p>
+                      <p className="text-xs text-muted-foreground">{booth.description}</p>
+                    </div>
+                    <span className="text-sm text-muted-foreground">問題を見る</span>
+                  </Link>
+                ))}
+              </>
+            ) : (
+              <div className="rounded-2xl border border-dashed border-border bg-muted/30 p-4 text-sm text-muted-foreground">
+                模擬店 QR をすべて一度ずつ通過すると、ここに問題一覧が表示されます。
+              </div>
+            )}
           </CardContent>
         </Card>
       </section>

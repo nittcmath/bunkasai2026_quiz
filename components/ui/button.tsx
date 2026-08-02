@@ -40,7 +40,10 @@ export function Button({ className, variant = 'default', size = 'default', asChi
   return (
     <button
       className={classes}
+      type={props.type ?? 'button'}
       {...props}
-    />
+    >
+      {children}
+    </button>
   );
 }

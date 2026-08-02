@@ -558,7 +558,7 @@
       "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
       "nickname": "",
       "createdAt": "2026-08-02T02:42:30.073Z",
-      "lastLogin": "2026-08-02T08:44:47.285Z",
+      "lastLogin": "2026-08-02T09:15:35.935Z",
       "totalPoints": 0,
       "currentPoints": 0,
       "correctCount": 0,
@@ -566,7 +566,7 @@
       "visitedBooths": [
         "b-01"
       ],
-      "lastActivity": "2026-08-02T08:44:47.285Z"
+      "lastActivity": "2026-08-02T09:15:35.935Z"
     },
     {
       "userId": "fd376bee-2793-4b65-9655-b100da6f6472",
@@ -998,6 +998,27 @@
       "questionId": "q-001",
       "boothId": "b-01",
       "timestamp": "2026-08-02T08:38:52.942Z"
+    },
+    {
+      "viewId": "add3cb07-741d-4054-b1c7-5b09d85848d3",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:55:53.738Z"
+    },
+    {
+      "viewId": "2be0c503-3161-4d8e-afa0-ab34e94b5f65",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:56:34.274Z"
+    },
+    {
+      "viewId": "39021ce8-22c9-4206-9173-e33b305702fb",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T09:12:44.836Z"
     }
   ],
   "boothVisits": [
@@ -1132,6 +1153,36 @@
       "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
       "boothId": "b-01",
       "timestamp": "2026-08-02T08:28:15.260Z"
+    },
+    {
+      "visitId": "83596625-4368-43db-8391-6034aab2ce88",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:49:10.005Z"
+    },
+    {
+      "visitId": "d7232668-787d-4d02-a584-326ef809dcdc",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:51:35.326Z"
+    },
+    {
+      "visitId": "e9e7fda1-5d40-4f96-9bfc-58184df98a9c",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:53:25.192Z"
+    },
+    {
+      "visitId": "079288e4-9117-4d1f-8c8d-c15ec7a5559c",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:54:07.218Z"
+    },
+    {
+      "visitId": "35ae5e29-953c-4da9-a408-9b0a19103fd0",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:55:49.395Z"
     }
   ],
   "exchangeTokens": [],
@@ -2054,6 +2105,150 @@
       "adminAction": "registerUser",
       "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
       "timestamp": "2026-08-02T08:44:47.286Z"
+    },
+    {
+      "logId": "4fd769f9-6f3a-46ca-bb0b-6b77c23f2fbf",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:49:09.962Z"
+    },
+    {
+      "logId": "a52cc93b-6b7a-4586-9bf8-bd56ed638e2e",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:49:10.005Z"
+    },
+    {
+      "logId": "28d19576-5ef7-49de-a6f5-bf6c079774bb",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:51:35.308Z"
+    },
+    {
+      "logId": "969083cb-2def-4033-add7-2f1cac71f2a8",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:51:35.326Z"
+    },
+    {
+      "logId": "c9117c10-83d2-4054-ae85-fa82f8a5761f",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:53:25.031Z"
+    },
+    {
+      "logId": "2aa4e7fc-7fa7-463f-b4df-85886b772269",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:53:25.192Z"
+    },
+    {
+      "logId": "23e4f269-f180-4cc1-8c8a-be054b348f2a",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:54:07.189Z"
+    },
+    {
+      "logId": "ec849024-3dc2-4d81-83ec-ced6288ab9be",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:54:07.218Z"
+    },
+    {
+      "logId": "02eadb57-a6bd-455a-824f-55783f2b7658",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:55:49.381Z"
+    },
+    {
+      "logId": "e56d6c9f-6377-40c0-b128-4e1d9eb1bce0",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:55:49.395Z"
+    },
+    {
+      "logId": "eee4402d-99df-42e9-97d8-29226232e374",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:55:53.690Z"
+    },
+    {
+      "logId": "e7dd59ed-e9ac-4080-8e33-5995fbf153ec",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:55:53.738Z"
+    },
+    {
+      "logId": "84f617d4-6635-4b60-8578-d73cc89b131a",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:56:34.257Z"
+    },
+    {
+      "logId": "022e00df-32c0-4b8b-b4bb-ae75aeb12241",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:56:34.274Z"
+    },
+    {
+      "logId": "20e913db-105e-4aa5-9efc-0c22b074f287",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:59:18.183Z"
+    },
+    {
+      "logId": "aa3986b8-25ed-44e8-943e-7f2b1433fce2",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:59:37.428Z"
+    },
+    {
+      "logId": "b4aab58e-f702-4fbc-b440-4c0458105410",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:59:39.905Z"
+    },
+    {
+      "logId": "15efd1be-4cff-4d87-9a2d-25caa90209f2",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:59:49.289Z"
+    },
+    {
+      "logId": "6d81416e-b1ee-4dac-980e-236b10ad910e",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:11:58.888Z"
+    },
+    {
+      "logId": "d76c868e-60e7-431f-bd9c-2b61e635c734",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:12:25.926Z"
+    },
+    {
+      "logId": "ab0b76a2-2dc7-46aa-9ee6-b687c9b7c544",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:12:44.814Z"
+    },
+    {
+      "logId": "677a50cd-c923-4d8a-a5c3-3d79c8b0fb46",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T09:12:44.836Z"
+    },
+    {
+      "logId": "43b4d0a0-59d4-4db3-8f07-75fea7b66d3b",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:15:28.054Z"
+    },
+    {
+      "logId": "063e4af1-77d6-4177-8950-8f5910a68a8f",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:15:35.935Z"
     }
   ],
   "analytics": []

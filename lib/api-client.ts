@@ -80,8 +80,12 @@ export async function apiFetch<T>(endpoint: string, init?: ApiFetchOptions): Pro
     },
     cache: 'no-store',
   });
+  const payload = (await response.json()) as T & { success?: boolean; message?: string };
   if (!response.ok) {
     throw new Error(`Request failed: ${response.status}`);
   }
-  return (await response.json()) as T;
+  if (payload && typeof payload === 'object' && 'success' in payload && payload.success === false) {
+    throw new Error(payload.message || 'Request failed');
+  }
+  return payload;
 }

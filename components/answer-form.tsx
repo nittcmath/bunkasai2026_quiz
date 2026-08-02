@@ -37,6 +37,34 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
 
   const normalizedAnswer = useMemo(() => (question.options.length ? answer : customAnswer), [answer, customAnswer, question.options.length]);
 
+  async function saveNickname(nextNickname: string) {
+    const trimmed = nextNickname.trim();
+    if (!visitorId) {
+      toast.error('来場者IDがありません');
+      return false;
+    }
+    if (!trimmed) {
+      toast.error('ニックネームを入力してください');
+      return false;
+    }
+    try {
+      await apiFetch('updateNickname', {
+        method: 'POST',
+        body: JSON.stringify({ userId: visitorId, nickname: trimmed }),
+      });
+      if (typeof document !== 'undefined') {
+        document.cookie = `nickname=${encodeURIComponent(trimmed)}; path=/; max-age=31536000; samesite=lax`;
+      }
+      setNickname(trimmed);
+      setNeedsNickname(false);
+      toast.success('ニックネームを登録しました');
+      return true;
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : 'ニックネームの登録に失敗しました');
+      return false;
+    }
+  }
+
   async function submit() {
     const finalNickname = nickname.trim();
     if (!finalNickname) {
@@ -110,7 +138,7 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       >
         <div className="space-y-3">
           <Input value={nickname} onChange={(event) => setNickname(event.target.value)} placeholder="ニックネーム" />
-          <Button className="w-full" onClick={() => setNeedsNickname(false)}>
+          <Button className="w-full" onClick={async () => { await saveNickname(nickname); }}>
             登録して続ける
           </Button>
         </div>
