@@ -92,7 +92,7 @@ export function AdminConsole() {
 
   async function loadData() {
     const [userResp, boothResp, questionResp] = await Promise.all([
-      apiFetch<{ data: { users: UserRow[] } }>('admin/searchUsers', { method: 'POST', body: JSON.stringify({ query: search }) }),
+      apiFetch<{ data: { users: UserRow[] } }>('searchUsers', { method: 'POST', body: JSON.stringify({ query: search }) }),
       apiFetch<{ data: { booths: BoothRow[] } }>('getBooths', { method: 'GET' }),
       apiFetch<{ data: { questions: QuestionRow[] } }>('getQuestions', { method: 'GET' }),
     ]);
@@ -106,7 +106,7 @@ export function AdminConsole() {
   }
 
   async function addQuestion() {
-    const response = await apiFetch<{ data: { questionId: string } }>('admin/addQuestion', {
+    const response = await apiFetch<{ data: { questionId: string } }>('addQuestion', {
       method: 'POST',
       body: JSON.stringify({
         boothId: questionForm.boothId,
@@ -140,7 +140,7 @@ export function AdminConsole() {
     if (!window.confirm(`問題 ${questionId} を削除しますか？`)) {
       return;
     }
-    await apiFetch('admin/deleteQuestion', {
+    await apiFetch('deleteQuestion', {
       method: 'POST',
       body: JSON.stringify({ questionId }),
     });
@@ -149,7 +149,7 @@ export function AdminConsole() {
   }
 
   async function generateToken() {
-    const response = await apiFetch<{ data: { token: string } }>('admin/generateExchangeToken', {
+    const response = await apiFetch<{ data: { token: string } }>('generateExchangeToken', {
       method: 'POST',
       body: JSON.stringify({ prizeName, cost: Number(cost) }),
     });
@@ -162,7 +162,7 @@ export function AdminConsole() {
   async function grantPoints(userId: string) {
     const delta = window.prompt('付与ポイント数') ?? '';
     if (!delta) return;
-    await apiFetch('admin/manualPointGrant', {
+    await apiFetch('manualPointGrant', {
       method: 'POST',
       body: JSON.stringify({ userId, point: Number(delta), reason: 'admin console' }),
     });
@@ -172,7 +172,7 @@ export function AdminConsole() {
   async function deductPoints(userId: string) {
     const delta = window.prompt('減算ポイント数') ?? '';
     if (!delta) return;
-    await apiFetch('admin/manualPointDeduct', {
+    await apiFetch('manualPointDeduct', {
       method: 'POST',
       body: JSON.stringify({ userId, point: Number(delta), reason: 'admin console' }),
     });
