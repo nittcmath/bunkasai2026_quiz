@@ -77,13 +77,6 @@ export async function POST(request: NextRequest, context: { params: Promise<{ en
     'analytics',
     'getHistory',
   ];
-  console.log(
-    request.headers.get('x-csrf-token')
-  );
-
-  console.log(
-    request.headers.get('cookie')
-  );
   if (!guard.allowed) {
     return json(toResponse(false, 'レートリミットに達しました', null), { status: 429 });
   }

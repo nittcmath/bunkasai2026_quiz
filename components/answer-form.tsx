@@ -65,14 +65,21 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
     }
   }
 
+  console.log({
+    answer,
+    normalizedAnswer,
+    question,
+  });
+
   async function submit() {
     const finalNickname = nickname.trim();
+    const answerText = String(normalizedAnswer ?? '');
     if (!finalNickname) {
       setNeedsNickname(true);
       toast.error('ニックネームを入力してください');
       return;
     }
-    if (!normalizedAnswer.trim()) {
+    if (!answerText.trim()) {
       toast.error('回答を入力してください');
       return;
     }
@@ -81,10 +88,10 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       const response = await apiFetch<{ success: boolean; message: string; data: { isCorrect: boolean; earnedPoint: number } | null }>('submitAnswer', {
         method: 'POST',
         body: JSON.stringify({
-          visitorId,
+          userId: visitorId,
           nickname: finalNickname,
           questionId: question.questionId,
-          answer: normalizedAnswer,
+          answer: answerText,
         }),
       });
       setResultMessage(response.message);

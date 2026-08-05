@@ -88,11 +88,7 @@ export async function apiFetch<T>(endpoint: string, init?: ApiFetchOptions): Pro
   });
   const text = await response.text();
 
-console.log('URL:', response.url);
-console.log('STATUS:', response.status);
-console.log('BODY:', text.slice(0, 500));
-
-const payload = JSON.parse(text);
+  const payload = JSON.parse(text);
   if (!response.ok) {
     console.log(response)
     throw new Error(`Request failed: ${response.status}`);
