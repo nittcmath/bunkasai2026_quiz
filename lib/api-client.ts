@@ -36,7 +36,13 @@ function buildUrl(endpoint: string, query?: ApiFetchOptions['query']) {
     if (value === null || value === undefined || value === '') return;
     url.searchParams.set(key, String(value));
   });
-  return `${url.pathname}${url.search}`;
+  const relativeUrl = `${url.pathname}${url.search}`;
+
+  if (typeof window !== 'undefined') {
+    return relativeUrl;
+  }
+
+  return new URL(relativeUrl, process.env.NEXT_PUBLIC_SITE_URL).toString();
 }
 
 function normalizeBody(endpoint: string, init?: ApiFetchOptions) {
@@ -80,8 +86,15 @@ export async function apiFetch<T>(endpoint: string, init?: ApiFetchOptions): Pro
     },
     cache: 'no-store',
   });
-  const payload = (await response.json()) as T & { success?: boolean; message?: string };
+  const text = await response.text();
+
+console.log('URL:', response.url);
+console.log('STATUS:', response.status);
+console.log('BODY:', text.slice(0, 500));
+
+const payload = JSON.parse(text);
   if (!response.ok) {
+    console.log(response)
     throw new Error(`Request failed: ${response.status}`);
   }
   if (payload && typeof payload === 'object' && 'success' in payload && payload.success === false) {
