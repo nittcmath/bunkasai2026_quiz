@@ -135,6 +135,20 @@ export async function getBooths(): Promise<
   });
 }
 
+export async function getBooth(
+  boothId: string,
+): Promise<ApiResponse<{ booth: Booth | null }>> {
+  return apiFetch<ApiResponse<{ booth: Booth | null }>>(
+    'getBooth',
+    {
+      method: 'GET',
+      query: {
+        boothId,
+      },
+    },
+  );
+}
+
 export async function getQuestions(
   boothId?: string,
 ): Promise<ApiResponse<{ questions: Question[] }>> {
@@ -149,10 +163,18 @@ export async function getQuestions(
   );
 }
 
-export async function getQuestion(questionId: string): Promise<ApiResponse<{ question: Question | null }>> {
-  return apiFetch('getQuestion', {
-    method: 'GET',
-  });
+export async function getQuestion(
+  questionId: string,
+): Promise<ApiResponse<{ question: Question | null }>> {
+  return apiFetch<ApiResponse<{ question: Question | null }>>(
+    'getQuestion',
+    {
+      method: 'POST',
+      body: JSON.stringify({
+        questionId,
+      }),
+    },
+  );
 }
 
 export async function submitAnswer(params: {

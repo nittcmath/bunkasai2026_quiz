@@ -4,7 +4,7 @@ import { cookies } from 'next/headers';
 import {
   registerUser,
   getQuestions,
-  getBooths,
+  getBooth,
   getHistory,
   getUser,
 } from '@/lib/service';
@@ -33,13 +33,13 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
   if (!question) {
     notFound();
   }
+  
+  const boothResponse = await getBooth(
+    question.boothId,
+  );
 
-  const boothsResponse = await getBooths();
-
-  const booth =
-    boothsResponse.data?.booths.find(
-      (item) => item.boothId === question.boothId,
-    ) ?? null;
+const booth =
+  boothResponse.data?.booth ?? null;
 
   const userResponse = visitorId
     ? await getUser(visitorId)
@@ -56,7 +56,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
   const solved =
     (historyResponse?.data?.history.answers ?? []).some(
       (answer) =>
-        answer.questionId === question.questionId &&
+        answer.questionId === questionId &&
         answer.isCorrect,
     );
     console.log(question);
@@ -65,7 +65,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
       {visitorId && (
         <RecordQuestionOpen
           userId={visitorId}
-          questionId={question.questionId}
+          questionId={questionId}
         />
       )}
 

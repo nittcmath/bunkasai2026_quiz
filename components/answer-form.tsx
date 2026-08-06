@@ -109,11 +109,7 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       setLoading(false);
     }
   }
-
-  const optionsArray = question.options
-  .slice(1, -1)   // [] を削除
-  .split(',')
-
+  const optionsArray = JSON.parse(question.options) || [];
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap gap-2">
