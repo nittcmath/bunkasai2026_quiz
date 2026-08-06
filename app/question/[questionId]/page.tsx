@@ -13,6 +13,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { AnswerForm } from '@/components/answer-form';
 import { RecordQuestionOpen } from '@/components/record-question-open';
+import { MathText } from '@/components/math-text';
 
 export default async function QuestionPage({ params }: { params: Promise<{ questionId: string }> }) {
   const { questionId } = await params;
@@ -79,7 +80,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="rounded-3xl border border-border bg-muted/40 p-5 text-base leading-8">
-              {question.questionText}
+              <MathText value={question.questionText} />
             </div>
             {question.imageUrl ? <img src={question.imageUrl} alt={question.title} className="w-full rounded-3xl border border-border object-cover" /> : null}
             <div className="rounded-2xl border border-border bg-background p-4">
