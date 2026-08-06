@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { ADMIN_COOKIE, assertCsrf, getRequestIp, verifyAdminToken } from '@/lib/auth';
 import { rateLimit } from '@/lib/rate-limit';
-import { toResponse } from '@/lib/store';
 
 const GAS_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
@@ -25,6 +24,18 @@ function buildGasUrl(endpoint: string, request: NextRequest) {
 function adminGuard(request: NextRequest) {
   const token = request.cookies.get(ADMIN_COOKIE)?.value ?? '';
   return verifyAdminToken(token);
+}
+
+function toResponse<T>(
+  success: boolean,
+  message: string,
+  data: T,
+) {
+  return {
+    success,
+    message,
+    data,
+  };
 }
 
 async function proxyToGas(request: NextRequest, endpoint: string) {
@@ -79,6 +90,7 @@ export async function POST(request: NextRequest, context: { params: Promise<{ en
     'getQuestion',
     'getBooths',
     'ranking',
+    'getExchangeToken',
     'analytics',
     'getHistory',
   ];

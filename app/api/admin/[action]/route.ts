@@ -1,9 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { ADMIN_COOKIE, assertCsrf, signAdminToken, verifyAdminToken } from '@/lib/auth';
 import { rateLimit } from '@/lib/rate-limit';
-import { addAdminLog, loadDb, toResponse, withDb } from '@/lib/store';
-import { generateExchangeToken, manualPointDeduct, manualPointGrant, recalculateRanking } from '@/lib/service';
-import { clamp, normalizeText } from '@/lib/utils';
 
 function json<T>(payload: T, init?: ResponseInit) {
   return NextResponse.json(payload, init);
@@ -50,4 +47,16 @@ export async function POST(request: NextRequest, context: { params: Promise<{ ac
     return response;
   }
   return json(toResponse(false, `Unsupported admin action: ${action}`, null), { status: 404 });
+}
+
+function toResponse<T>(
+  success: boolean,
+  message: string,
+  data: T,
+) {
+  return {
+    success,
+    message,
+    data,
+  };
 }

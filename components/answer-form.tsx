@@ -8,6 +8,7 @@ import { Textarea } from './ui/textarea';
 import { Badge } from './ui/badge';
 import { Modal } from './modal';
 import { toast } from 'sonner';
+import { MathText } from '@/components/math-text';
 
 type Question = {
   questionId: string;
@@ -65,12 +66,6 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
     }
   }
 
-  console.log({
-    answer,
-    normalizedAnswer,
-    question,
-  });
-
   async function submit() {
     const finalNickname = nickname.trim();
     const answerText = String(normalizedAnswer ?? '');
@@ -108,7 +103,8 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       setLoading(false);
     }
   }
-
+  const optionsArray = question.options || [];
+  console.log('optionsArray', optionsArray);
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap gap-2">
@@ -119,15 +115,15 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
         <label className="block text-sm font-semibold">ニックネーム</label>
         <Input value={nickname} onChange={(event) => setNickname(event.target.value)} placeholder="例: たろう" />
       </div>
-      {question.options.length ? (
+      {optionsArray.length ? (
         <div className="grid gap-2 sm:grid-cols-2">
-          {question.options.map((option) => (
+          {optionsArray.map((option: string) => (
             <button
               key={option}
               onClick={() => setAnswer(option)}
               className={`rounded-2xl border px-4 py-3 text-left text-sm font-medium transition ${answer === option ? 'border-primary bg-primary/10' : 'border-border bg-background hover:bg-muted'}`}
             >
-              {option}
+              <MathText value={option} />
             </button>
           ))}
         </div>

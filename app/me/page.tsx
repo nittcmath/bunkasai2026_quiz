@@ -1,6 +1,10 @@
 import { cookies } from 'next/headers';
-import { registerUser, getUser, getHistory, getRanking } from '@/lib/service';
-import { loadDb, buildQuestionViewHistory } from '@/lib/store';
+import {
+  registerUser,
+  getUser,
+  getHistory,
+  getRanking,
+} from '@/lib/service';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { formatDateTime, formatPoints, formatRelative } from '@/lib/format';
@@ -11,18 +15,18 @@ export default async function MePage() {
   if (visitorId) {
     await registerUser(visitorId);
   }
-  const [userResponse, historyResponse, rankingResponse, db] = await Promise.all([
+  const [userResponse, historyResponse, rankingResponse] =
+  await Promise.all([
     visitorId ? getUser(visitorId) : Promise.resolve(null),
     visitorId ? getHistory(visitorId) : Promise.resolve(null),
     getRanking(),
-    loadDb(),
   ]);
   const user = userResponse?.data?.user;
   const stats = userResponse?.data?.stats;
   const history = historyResponse?.data?.history;
-  const ranking = rankingResponse.data?.ranking ?? [];
-  const questionViews = visitorId ? buildQuestionViewHistory(db, visitorId) : [];
-
+  const ranking = rankingResponse.data?.top100 ?? [];
+  const questionViews =
+    history?.questionViews ?? [];
   return (
     <div className="space-y-6">
       <Card>

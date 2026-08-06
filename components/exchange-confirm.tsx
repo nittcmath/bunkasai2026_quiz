@@ -22,7 +22,7 @@ export function ExchangeConfirm({ visitorId, token, currentPoints, prizeName, co
     try {
       const response = await apiFetch<{ success: boolean; message: string; data: { currentPoints: number } | null }>('redeemExchangeToken', {
         method: 'POST',
-        body: JSON.stringify({ visitorId, token }),
+        body: JSON.stringify({ userId: visitorId, token }),
       });
       setResult(response.message);
       toast.success(response.message);

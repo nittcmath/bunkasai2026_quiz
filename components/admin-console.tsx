@@ -30,7 +30,7 @@ type QuestionRow = {
   hint: string;
   imageUrl: string;
   correctAnswer: string;
-  options: string[];
+  options: string;
 };
 
 type BoothRow = {

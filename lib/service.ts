@@ -1,4 +1,4 @@
-import { ApiResponse, Booth, Exchange, Question, RankingRow, User, UserHistory } from './types';
+import { ApiResponse, Booth, ExchangeToken, Question, RankingRow, User, UserHistory } from './types';
 import { apiFetch } from './api-client'
 
 export type RequestContext = {
@@ -43,6 +43,37 @@ export async function getUser(
     body: JSON.stringify({
       userId,
     }),
+  });
+}
+
+export async function getExchangeToken(
+  token: string,
+): Promise<
+  ApiResponse<{
+    exchangeToken: {
+      token: string;
+      prizeName: string;
+      cost: number;
+      expireAt: string;
+      used: boolean;
+    };
+  } | null>
+> {
+  return apiFetch<
+    ApiResponse<{
+      exchangeToken: {
+        token: string;
+        prizeName: string;
+        cost: number;
+        expireAt: string;
+        used: boolean;
+      };
+    } | null>
+  >('getExchangeToken', {
+    method: 'GET',
+    query: {
+      token,
+    },
   });
 }
 
@@ -104,6 +135,20 @@ export async function getBooths(): Promise<
   });
 }
 
+export async function getBooth(
+  boothId: string,
+): Promise<ApiResponse<{ booth: Booth | null }>> {
+  return apiFetch<ApiResponse<{ booth: Booth | null }>>(
+    'getBooth',
+    {
+      method: 'GET',
+      query: {
+        boothId,
+      },
+    },
+  );
+}
+
 export async function getQuestions(
   boothId?: string,
 ): Promise<ApiResponse<{ questions: Question[] }>> {
@@ -118,10 +163,18 @@ export async function getQuestions(
   );
 }
 
-export async function getQuestion(questionId: string): Promise<ApiResponse<{ question: Question | null }>> {
-  return apiFetch('getQuestion', {
-    method: 'GET',
-  });
+export async function getQuestion(
+  questionId: string,
+): Promise<ApiResponse<{ question: Question | null }>> {
+  return apiFetch<ApiResponse<{ question: Question | null }>>(
+    'getQuestion',
+    {
+      method: 'POST',
+      body: JSON.stringify({
+        questionId,
+      }),
+    },
+  );
 }
 
 export async function submitAnswer(params: {
