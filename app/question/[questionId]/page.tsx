@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { cookies } from 'next/headers';
 import {
   registerUser,
-  getQuestions,
+  getQuestion,
   getBooth,
   getHistory,
   getUser,
@@ -23,27 +23,30 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
   if (visitorId) {
     await registerUser(visitorId);
   }
-  const questionsResponse = await getQuestions();
+
+  const questionResponse =
+    await getQuestion(questionId);
 
   const question =
-    questionsResponse.data?.questions.find(
-      (item) => item.questionId === questionId,
-    ) ?? null;
+    questionResponse.data?.question ?? null;
 
   if (!question) {
-    notFound();
-  }
+    throw new Error("question is null");
+  }  
+  const boothResponse =
+    await getBooth(question.boothId);
   
-  const boothResponse = await getBooth(
-    question.boothId,
-  );
+  const booth =
+    boothResponse.data?.booth ?? null;
 
-const booth =
-  boothResponse.data?.booth ?? null;
+  if (!booth) {
+    throw new Error("booth is null");
+  }
 
-  const userResponse = visitorId
-    ? await getUser(visitorId)
-    : null;
+  const userResponse =
+    visitorId
+      ? await getUser(visitorId)
+      : null;
 
   const historyResponse = visitorId
     ? await getHistory(visitorId)

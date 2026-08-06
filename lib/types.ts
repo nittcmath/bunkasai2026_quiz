@@ -129,5 +129,6 @@ export type UserHistory = {
   answers: Answer[];
   exchanges: Exchange[];
   boothVisits: BoothVisit[];
+  questionViews: QuestionView[];
 };
 

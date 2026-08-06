@@ -66,12 +66,6 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
     }
   }
 
-  console.log({
-    answer,
-    normalizedAnswer,
-    question,
-  });
-
   async function submit() {
     const finalNickname = nickname.trim();
     const answerText = String(normalizedAnswer ?? '');
@@ -109,7 +103,8 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       setLoading(false);
     }
   }
-  const optionsArray = JSON.parse(question.options.join('')) || [];
+  const optionsArray = question.options || [];
+  console.log('optionsArray', optionsArray);
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap gap-2">

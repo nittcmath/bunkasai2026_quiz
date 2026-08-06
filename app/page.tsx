@@ -138,10 +138,6 @@ export default async function HomePage() {
                     {booth.location}
                   </p>
                 </div>
-
-                <Badge>
-                  {booth.boothId}
-                </Badge>
               </div>
             ))}
           </CardContent>
