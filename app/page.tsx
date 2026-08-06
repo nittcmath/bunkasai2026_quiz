@@ -1,7 +1,14 @@
 import Link from 'next/link';
 import { cookies } from 'next/headers';
-import { registerUser, getUser, getRanking, getHistory } from '@/lib/service';
-import { loadDb, buildQuestionViewHistory } from '@/lib/store';
+import {
+  registerUser,
+  getUser,
+  getRanking,
+  getHistory,
+  getBooths,
+  getQuestions,
+} from '@/lib/service';
+``
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -12,10 +19,15 @@ import type { Route } from "next";
 export default async function HomePage() {
   const cookieStore = await cookies();
   const visitorId = cookieStore.get('visitorId')?.value ?? '';
+  const nicknameCookie = cookieStore.get('nickname')?.value ?? '';
   if (visitorId) {
     await registerUser(visitorId);
   }
-  const db = await loadDb();
+  const boothsResponse = await getBooths();
+  const questionsResponse = await getQuestions();
+
+  const booths = boothsResponse.data?.booths ?? [];
+  const questions = questionsResponse.data?.questions ?? [];
   const userResponse = visitorId ? await getUser(visitorId) : null;
   const rankingResponse = await getRanking();
   const historyResponse = visitorId ? await getHistory(visitorId) : null;
@@ -23,17 +35,28 @@ export default async function HomePage() {
   const stats = userResponse?.data?.stats;
   const ranking = rankingResponse.data?.top100 ?? [];
   const history = historyResponse?.data?.history;
-  const questionViews = visitorId ? buildQuestionViewHistory(db, visitorId) : [];
+  const userNickname = user?.nickname || nicknameCookie;
+  const canShowQuestionLinks = Boolean(visitorId && booths.length && user?.visitedBooths.length);
   const recentActivity = [
-    ...(history?.answers ?? []).map((answer) => ({ type: answer.isCorrect ? '正解' : '回答', title: answer.questionId, time: answer.timestamp })),
-    ...(history?.boothVisits ?? []).map((visit) => ({ type: '訪問', title: visit.boothId, time: visit.timestamp })),
-    ...questionViews.map((view) => ({ type: '閲覧', title: view.questionId, time: view.timestamp })),
+    ...(history?.answers ?? []).map((answer) => ({
+      type: answer.isCorrect ? '正解' : '回答',
+      title: answer.questionId,
+      time: answer.timestamp,
+    })),
+
+    ...(history?.boothVisits ?? []).map((visit) => ({
+      type: '訪問',
+      title: visit.boothId,
+      time: visit.timestamp,
+    })),
   ]
-    .sort((left, right) => right.time.localeCompare(left.time))
+    .sort((left, right) =>
+      right.time.localeCompare(left.time),
+    )
     .slice(0, 6);
   const answeredQuestionCount = stats?.answeredQuestionCount ?? 0;
   const solvedCount = stats?.solvedCount ?? 0;
-  const unreadCount = Math.max(0, db.questions.length - answeredQuestionCount);
+ const unreadCount = Math.max(0, questions.length - answeredQuestionCount);
 
   return (
     <div className="space-y-8 animate-fadeUp">
@@ -61,7 +84,7 @@ export default async function HomePage() {
         <Card>
           <CardHeader>
             <CardTitle>あなたの状態</CardTitle>
-            <CardDescription>{user?.nickname ? `${user.nickname} さん` : '初回アクセスの来場者'}</CardDescription>
+            <CardDescription>{userNickname ? `${userNickname} さん` : '初回アクセスの来場者'}</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-3">
             <Stat label="所有ポイント" value={formatPoints(user?.currentPoints ?? 0)} />
@@ -101,18 +124,26 @@ export default async function HomePage() {
             <CardDescription>訪問数の多い順です。</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
-            {(db.booths ?? []).map((booth) => {
-              const visits = db.boothVisits.filter((visit) => visit.boothId === booth.boothId).length;
-              return (
-                <div key={booth.boothId} className="flex items-center justify-between gap-3 rounded-2xl border border-border bg-muted/40 p-3">
-                  <div>
-                    <p className="font-semibold">{booth.boothName}</p>
-                    <p className="text-xs text-muted-foreground">{booth.location}</p>
-                  </div>
-                  <Badge>{visits} 回</Badge>
+            {booths.map((booth) => (
+              <div
+                key={booth.boothId}
+                className="flex items-center justify-between gap-3 rounded-2xl border border-border bg-muted/40 p-3"
+              >
+                <div>
+                  <p className="font-semibold">
+                    {booth.boothName}
+                  </p>
+
+                  <p className="text-xs text-muted-foreground">
+                    {booth.location}
+                  </p>
                 </div>
-              );
-            })}
+
+                <Badge>
+                  {booth.boothId}
+                </Badge>
+              </div>
+            ))}
           </CardContent>
         </Card>
       </section>
@@ -137,19 +168,27 @@ export default async function HomePage() {
         <Card>
           <CardHeader>
             <CardTitle>回答スタート</CardTitle>
-            <CardDescription>模擬店 QR から問題一覧へ進んでください。</CardDescription>
+            <CardDescription>各模擬店の QR を一度通過すると問題を表示します。</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
-            <Separator />
-            {(db.booths ?? []).map((booth) => (
-              <Link key={booth.boothId} href={`/booth/${booth.boothId}`} className="flex items-center justify-between rounded-2xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:bg-muted">
-                <div>
-                  <p className="font-semibold">{booth.boothName}</p>
-                  <p className="text-xs text-muted-foreground">{booth.description}</p>
-                </div>
-                <span className="text-sm text-muted-foreground">開く</span>
-              </Link>
-            ))}
+            {canShowQuestionLinks ? (
+              <>
+                <Separator />
+                {booths.map((booth) => (
+                  <Link key={booth.boothId} href={`/booth/${booth.boothId}`} className="flex items-center justify-between rounded-2xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:bg-muted">
+                    <div>
+                      <p className="font-semibold">{booth.boothName}</p>
+                      <p className="text-xs text-muted-foreground">{booth.description}</p>
+                    </div>
+                    <span className="text-sm text-muted-foreground">問題を見る</span>
+                  </Link>
+                ))}
+              </>
+            ) : (
+              <div className="rounded-2xl border border-dashed border-border bg-muted/30 p-4 text-sm text-muted-foreground">
+                模擬店 QR をすべて一度ずつ通過すると、ここに問題一覧が表示されます。
+              </div>
+            )}
           </CardContent>
         </Card>
       </section>

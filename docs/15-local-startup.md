@@ -1,7 +1,7 @@
 # ローカル起動手順
 
 1. `npm install`
-2. 必要に応じて `.env.local` に `ADMIN_PASSWORD` を設定する
+2. `.env.local` に `ADMIN_PASSWORD=bunkasai2026-admin` を設定する
 3. `npm run dev`
 4. `http://localhost:3000` を開く
 5. サンプルデータが必要なら `scripts/seed.ts` を実行して `.data/db.json` を生成する

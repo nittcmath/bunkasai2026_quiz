@@ -37,14 +37,49 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
 
   const normalizedAnswer = useMemo(() => (question.options.length ? answer : customAnswer), [answer, customAnswer, question.options.length]);
 
+  async function saveNickname(nextNickname: string) {
+    const trimmed = nextNickname.trim();
+    if (!visitorId) {
+      toast.error('来場者IDがありません');
+      return false;
+    }
+    if (!trimmed) {
+      toast.error('ニックネームを入力してください');
+      return false;
+    }
+    try {
+      await apiFetch('updateNickname', {
+        method: 'POST',
+        body: JSON.stringify({ userId: visitorId, nickname: trimmed }),
+      });
+      if (typeof document !== 'undefined') {
+        document.cookie = `nickname=${encodeURIComponent(trimmed)}; path=/; max-age=31536000; samesite=lax`;
+      }
+      setNickname(trimmed);
+      setNeedsNickname(false);
+      toast.success('ニックネームを登録しました');
+      return true;
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : 'ニックネームの登録に失敗しました');
+      return false;
+    }
+  }
+
+  console.log({
+    answer,
+    normalizedAnswer,
+    question,
+  });
+
   async function submit() {
     const finalNickname = nickname.trim();
+    const answerText = String(normalizedAnswer ?? '');
     if (!finalNickname) {
       setNeedsNickname(true);
       toast.error('ニックネームを入力してください');
       return;
     }
-    if (!normalizedAnswer.trim()) {
+    if (!answerText.trim()) {
       toast.error('回答を入力してください');
       return;
     }
@@ -53,10 +88,10 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       const response = await apiFetch<{ success: boolean; message: string; data: { isCorrect: boolean; earnedPoint: number } | null }>('submitAnswer', {
         method: 'POST',
         body: JSON.stringify({
-          visitorId,
+          userId: visitorId,
           nickname: finalNickname,
           questionId: question.questionId,
-          answer: normalizedAnswer,
+          answer: answerText,
         }),
       });
       setResultMessage(response.message);
@@ -110,7 +145,7 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       >
         <div className="space-y-3">
           <Input value={nickname} onChange={(event) => setNickname(event.target.value)} placeholder="ニックネーム" />
-          <Button className="w-full" onClick={() => setNeedsNickname(false)}>
+          <Button className="w-full" onClick={async () => { await saveNickname(nickname); }}>
             登録して続ける
           </Button>
         </div>

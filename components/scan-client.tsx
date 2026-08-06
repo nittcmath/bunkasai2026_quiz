@@ -63,7 +63,7 @@ export function ScanClient({ onDetected }: Props) {
         <div className="space-y-3">
           <Input value={manualUrl} onChange={(event) => setManualUrl(event.target.value)} placeholder="読み取った URL を貼り付け" />
           <Button className="w-full" onClick={() => manualUrl && onDetected(manualUrl as Route)}>
-            開く
+            URLを開く
           </Button>
         </div>
       </CardContent>

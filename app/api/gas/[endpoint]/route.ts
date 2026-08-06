@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { assertCsrf, getRequestIp } from '@/lib/auth';
+import { ADMIN_COOKIE, assertCsrf, getRequestIp, verifyAdminToken } from '@/lib/auth';
 import { rateLimit } from '@/lib/rate-limit';
 import { toResponse } from '@/lib/store';
 
@@ -20,6 +20,11 @@ function buildGasUrl(endpoint: string, request: NextRequest) {
     url.searchParams.set(key, value);
   });
   return url;
+}
+
+function adminGuard(request: NextRequest) {
+  const token = request.cookies.get(ADMIN_COOKIE)?.value ?? '';
+  return verifyAdminToken(token);
 }
 
 async function proxyToGas(request: NextRequest, endpoint: string) {
@@ -67,11 +72,51 @@ export async function GET(request: NextRequest, context: { params: Promise<{ end
 export async function POST(request: NextRequest, context: { params: Promise<{ endpoint: string }> }) {
   const { endpoint } = await context.params;
   const guard = limited(request, endpoint);
+  const csrfExempt = [
+    'registerUser',
+    'getUser',
+    'getQuestions',
+    'getQuestion',
+    'getBooths',
+    'ranking',
+    'analytics',
+    'getHistory',
+  ];
+  const ADMIN_ENDPOINTS = [
+    'addQuestion',
+    'editQuestion',
+    'deleteQuestion',
+    'addBooth',
+    'editBooth',
+    'manualPointGrant',
+    'manualPointDeduct',
+    'generateExchangeToken',
+    'recalculateRanking',
+    'exportCsv',
+  ];
+  if (  ADMIN_ENDPOINTS.includes(endpoint) && !adminGuard(request)) {
+  return json(
+    toResponse(
+      false,
+      '管理者権限が必要です',
+      null
+    ),
+    { status: 401 }
+  );
+}
   if (!guard.allowed) {
     return json(toResponse(false, 'レートリミットに達しました', null), { status: 429 });
   }
-  if (!assertCsrf(request)) {
-    return json(toResponse(false, 'CSRF 検証に失敗しました', null), { status: 403 });
+  if ( !csrfExempt.includes(endpoint) && !assertCsrf(request)) 
+  {
+    return json(
+      toResponse(
+        false,
+        'CSRF 検証に失敗しました',
+        null
+      ),
+      { status: 403 }
+    );
   }
   try {
     return await proxyToGas(request, endpoint);

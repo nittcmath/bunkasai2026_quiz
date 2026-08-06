@@ -36,7 +36,13 @@ function buildUrl(endpoint: string, query?: ApiFetchOptions['query']) {
     if (value === null || value === undefined || value === '') return;
     url.searchParams.set(key, String(value));
   });
-  return `${url.pathname}${url.search}`;
+  const relativeUrl = `${url.pathname}${url.search}`;
+
+  if (typeof window !== 'undefined') {
+    return relativeUrl;
+  }
+
+  return new URL(relativeUrl, process.env.NEXT_PUBLIC_SITE_URL).toString();
 }
 
 function normalizeBody(endpoint: string, init?: ApiFetchOptions) {
@@ -80,8 +86,15 @@ export async function apiFetch<T>(endpoint: string, init?: ApiFetchOptions): Pro
     },
     cache: 'no-store',
   });
+  const text = await response.text();
+
+  const payload = JSON.parse(text);
   if (!response.ok) {
+    console.log(response)
     throw new Error(`Request failed: ${response.status}`);
   }
-  return (await response.json()) as T;
+  if (payload && typeof payload === 'object' && 'success' in payload && payload.success === false) {
+    throw new Error(payload.message || 'Request failed');
+  }
+  return payload;
 }

@@ -503,6 +503,120 @@
       "answerCount": 0,
       "visitedBooths": [],
       "lastActivity": "2026-08-02T00:18:41.025Z"
+    },
+    {
+      "userId": "0e61e5fa-c750-4594-9657-8cb488a7c527",
+      "nickname": "",
+      "createdAt": "2026-08-02T02:34:49.846Z",
+      "lastLogin": "2026-08-02T02:34:49.846Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-02T02:34:49.846Z"
+    },
+    {
+      "userId": "7f9185c0-f65b-4ca9-a7b0-adf5edf865f3",
+      "nickname": "",
+      "createdAt": "2026-08-02T02:34:52.839Z",
+      "lastLogin": "2026-08-02T02:34:52.875Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-02T02:34:52.878Z"
+    },
+    {
+      "userId": "393a3398-2893-433f-97e8-f0b5aabd8c99",
+      "nickname": "",
+      "createdAt": "2026-08-02T02:34:54.120Z",
+      "lastLogin": "2026-08-02T02:34:54.135Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-02T02:34:54.136Z"
+    },
+    {
+      "userId": "11408487-9c95-4060-96a2-401088c15c19",
+      "nickname": "",
+      "createdAt": "2026-08-02T02:41:52.443Z",
+      "lastLogin": "2026-08-02T02:41:52.444Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-02T02:41:52.444Z"
+    },
+    {
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "nickname": "",
+      "createdAt": "2026-08-02T02:42:30.073Z",
+      "lastLogin": "2026-08-02T09:15:35.935Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-02T09:15:35.935Z"
+    },
+    {
+      "userId": "fd376bee-2793-4b65-9655-b100da6f6472",
+      "nickname": "",
+      "createdAt": "2026-08-02T07:48:00.595Z",
+      "lastLogin": "2026-08-02T07:48:00.615Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-02T07:48:00.615Z"
+    },
+    {
+      "userId": "dcb38e2f-e4c5-404f-bae7-65c242098e65",
+      "nickname": "",
+      "createdAt": "2026-08-02T07:52:31.649Z",
+      "lastLogin": "2026-08-02T07:52:31.667Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-02T07:52:31.667Z"
+    },
+    {
+      "userId": "ac4b8fae-be0d-4aed-b8b8-0909b099957c",
+      "nickname": "",
+      "createdAt": "2026-08-02T08:02:20.368Z",
+      "lastLogin": "2026-08-02T08:13:08.018Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [],
+      "lastActivity": "2026-08-02T08:13:08.018Z"
+    },
+    {
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "nickname": "",
+      "createdAt": "2026-08-04T04:57:28.085Z",
+      "lastLogin": "2026-08-05T00:25:40.673Z",
+      "totalPoints": 0,
+      "currentPoints": 0,
+      "correctCount": 0,
+      "answerCount": 0,
+      "visitedBooths": [
+        "b-01"
+      ],
+      "lastActivity": "2026-08-05T00:25:40.674Z"
     }
   ],
   "questions": [
@@ -744,6 +858,223 @@
       "questionId": "q-001",
       "boothId": "b-01",
       "timestamp": "2026-08-02T00:18:41.025Z"
+    },
+    {
+      "viewId": "5ef4a220-0cc0-46f7-92da-27b9e584550d",
+      "userId": "393a3398-2893-433f-97e8-f0b5aabd8c99",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:34:54.136Z"
+    },
+    {
+      "viewId": "d3608bdf-cf13-447b-8a12-c9b5dd46f532",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:42:45.704Z"
+    },
+    {
+      "viewId": "b27916f2-a52c-44b5-b41a-1a0eff010acd",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:45:15.106Z"
+    },
+    {
+      "viewId": "af03e280-6085-4445-afcd-5f24f08f81b7",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:45:24.315Z"
+    },
+    {
+      "viewId": "e58cac84-5c08-4d58-bd0d-80531d083b7c",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:48:51.449Z"
+    },
+    {
+      "viewId": "6b427077-5b0c-4b0b-a1d9-3f5507af3c79",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:49:18.793Z"
+    },
+    {
+      "viewId": "5da9599e-f21b-4368-b084-756bd950fb21",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:35:11.703Z"
+    },
+    {
+      "viewId": "6e42842d-04ca-4a82-99f9-f6c178f25a01",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:47:49.187Z"
+    },
+    {
+      "viewId": "900d481a-0ff7-4dd5-8842-d6782afe89f8",
+      "userId": "fd376bee-2793-4b65-9655-b100da6f6472",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:48:00.615Z"
+    },
+    {
+      "viewId": "40bb984c-8090-4fe6-8bed-b23ae7fe2131",
+      "userId": "dcb38e2f-e4c5-404f-bae7-65c242098e65",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:52:31.667Z"
+    },
+    {
+      "viewId": "01ed838a-a3ee-4241-b56d-2373eb648c31",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:53:29.149Z"
+    },
+    {
+      "viewId": "0dde38ce-43bd-4cc5-9250-4942ff825a57",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:56:12.353Z"
+    },
+    {
+      "viewId": "917b0044-1287-4cde-baa5-d3108dd3988c",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:56:12.810Z"
+    },
+    {
+      "viewId": "4f85f295-2b8d-448f-9099-50371340b29f",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:00:31.888Z"
+    },
+    {
+      "viewId": "15fdf8e4-a234-4c9d-af35-a00358f7ed85",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:00:39.665Z"
+    },
+    {
+      "viewId": "92e8f3d5-60ad-4384-82ec-a639f9a411ef",
+      "userId": "ac4b8fae-be0d-4aed-b8b8-0909b099957c",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:02:20.460Z"
+    },
+    {
+      "viewId": "6a7867f4-4d5d-4d26-82de-cce6248deb89",
+      "userId": "ac4b8fae-be0d-4aed-b8b8-0909b099957c",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:13:08.018Z"
+    },
+    {
+      "viewId": "a669f7b5-353a-4369-8654-c74a1ea138ee",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:13:08.055Z"
+    },
+    {
+      "viewId": "f02ce86f-a193-4c91-bdf8-4a225d894a74",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:28:23.539Z"
+    },
+    {
+      "viewId": "88fe9105-aa65-457a-aa11-173214eea021",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:33:54.758Z"
+    },
+    {
+      "viewId": "3b44614c-fa16-43ab-9bad-6f8e6dda2102",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:34:07.422Z"
+    },
+    {
+      "viewId": "d642396b-049a-4a55-94bd-3718defb32d4",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:38:52.942Z"
+    },
+    {
+      "viewId": "add3cb07-741d-4054-b1c7-5b09d85848d3",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:55:53.738Z"
+    },
+    {
+      "viewId": "2be0c503-3161-4d8e-afa0-ab34e94b5f65",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:56:34.274Z"
+    },
+    {
+      "viewId": "39021ce8-22c9-4206-9173-e33b305702fb",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T09:12:44.836Z"
+    },
+    {
+      "viewId": "bc7dd58e-3386-488d-a339-3d0e2c99d0bc",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T05:57:24.770Z"
+    },
+    {
+      "viewId": "cbf851e1-4657-4a30-bd5c-75a4777ce635",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "questionId": "q-002",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T05:59:15.914Z"
+    },
+    {
+      "viewId": "e85259aa-6392-473d-8bb5-537c01be1e2a",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T06:44:56.904Z"
+    },
+    {
+      "viewId": "51aa769b-8bf4-4c2a-881b-d3ef134c005f",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T06:57:07.215Z"
+    },
+    {
+      "viewId": "5300c804-c174-46e2-b345-da3f1e40bd37",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T06:57:17.241Z"
+    },
+    {
+      "viewId": "5e58b5e5-1553-4678-82ec-f28f6c856107",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "questionId": "q-001",
+      "boothId": "b-01",
+      "timestamp": "2026-08-05T00:25:19.305Z"
     }
   ],
   "boothVisits": [
@@ -824,6 +1155,120 @@
       "userId": "2aff0b34-357a-48ce-b956-cf8b4b04de9a",
       "boothId": "b-01",
       "timestamp": "2026-08-02T00:18:40.177Z"
+    },
+    {
+      "visitId": "816cb44d-2063-446f-bbaf-c5fde559a430",
+      "userId": "7f9185c0-f65b-4ca9-a7b0-adf5edf865f3",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:34:52.878Z"
+    },
+    {
+      "visitId": "a2363ef5-9590-4342-98dd-24bf9bed1143",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:42:39.418Z"
+    },
+    {
+      "visitId": "421f8200-d988-4ebe-8e8f-d239009cf8b9",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:42:39.753Z"
+    },
+    {
+      "visitId": "982fb028-14d0-4e95-88a0-4ea80ed6dca3",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T02:42:40.031Z"
+    },
+    {
+      "visitId": "11e7a75c-7f61-407e-90e1-f3f2530d55bb",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:35:05.768Z"
+    },
+    {
+      "visitId": "51ee1b16-51c3-413e-9bc5-1ee6f46f4189",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:47:47.918Z"
+    },
+    {
+      "visitId": "3ddda266-5d60-442f-b464-60e2bee51edc",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:53:28.298Z"
+    },
+    {
+      "visitId": "cb5e3de0-0b29-4dff-9e4b-a0348a1245ae",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T07:55:36.377Z"
+    },
+    {
+      "visitId": "06c199c2-59d0-4196-82ba-f6848bc924f4",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:28:15.260Z"
+    },
+    {
+      "visitId": "83596625-4368-43db-8391-6034aab2ce88",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:49:10.005Z"
+    },
+    {
+      "visitId": "d7232668-787d-4d02-a584-326ef809dcdc",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:51:35.326Z"
+    },
+    {
+      "visitId": "e9e7fda1-5d40-4f96-9bfc-58184df98a9c",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:53:25.192Z"
+    },
+    {
+      "visitId": "079288e4-9117-4d1f-8c8d-c15ec7a5559c",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:54:07.218Z"
+    },
+    {
+      "visitId": "35ae5e29-953c-4da9-a408-9b0a19103fd0",
+      "userId": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805",
+      "boothId": "b-01",
+      "timestamp": "2026-08-02T08:55:49.395Z"
+    },
+    {
+      "visitId": "d3993de6-c2e3-496c-adb0-8649f2ab1988",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T05:59:11.640Z"
+    },
+    {
+      "visitId": "f51b9805-7de5-42c4-9efa-bf5752ed2fec",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T05:59:12.094Z"
+    },
+    {
+      "visitId": "652702a8-bf01-4bcd-8900-ccae3f46cf0d",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T06:00:20.571Z"
+    },
+    {
+      "visitId": "bff148c4-9abd-474f-a21b-3ce4cb94069c",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "boothId": "b-01",
+      "timestamp": "2026-08-04T06:44:41.965Z"
+    },
+    {
+      "visitId": "d3a26a43-7bd4-4418-92de-bbb2e2aa7265",
+      "userId": "74be2020-49ff-4a87-a4a9-dabf5f001a83",
+      "boothId": "b-01",
+      "timestamp": "2026-08-05T00:25:40.674Z"
     }
   ],
   "exchangeTokens": [],
@@ -1308,6 +1753,774 @@
       "adminAction": "recordQuestionOpen",
       "detail": "cff841e8-6020-44af-993a-b54ebbb177c3 viewed q-001",
       "timestamp": "2026-08-02T00:18:41.025Z"
+    },
+    {
+      "logId": "e6918714-b3c0-4f82-8a98-9fb29de8fdc0",
+      "adminAction": "registerUser",
+      "detail": "0e61e5fa-c750-4594-9657-8cb488a7c527 nickname=empty",
+      "timestamp": "2026-08-02T02:34:49.846Z"
+    },
+    {
+      "logId": "620a9330-9694-4f07-94c9-791251fd8644",
+      "adminAction": "registerUser",
+      "detail": "7f9185c0-f65b-4ca9-a7b0-adf5edf865f3 nickname=empty",
+      "timestamp": "2026-08-02T02:34:52.840Z"
+    },
+    {
+      "logId": "9ba317d6-6aec-4ef8-a222-4de641ff184b",
+      "adminAction": "recordVisit",
+      "detail": "7f9185c0-f65b-4ca9-a7b0-adf5edf865f3 visited b-01",
+      "timestamp": "2026-08-02T02:34:52.878Z"
+    },
+    {
+      "logId": "b7b6e623-afcd-4eca-b17b-09b232f1f346",
+      "adminAction": "registerUser",
+      "detail": "393a3398-2893-433f-97e8-f0b5aabd8c99 nickname=empty",
+      "timestamp": "2026-08-02T02:34:54.120Z"
+    },
+    {
+      "logId": "3bc51471-ed70-46a4-925c-590a8b903756",
+      "adminAction": "recordQuestionOpen",
+      "detail": "393a3398-2893-433f-97e8-f0b5aabd8c99 viewed q-001",
+      "timestamp": "2026-08-02T02:34:54.136Z"
+    },
+    {
+      "logId": "ce899f75-0256-491f-b153-29fa790a020f",
+      "adminAction": "registerUser",
+      "detail": "11408487-9c95-4060-96a2-401088c15c19 nickname=empty",
+      "timestamp": "2026-08-02T02:41:52.444Z"
+    },
+    {
+      "logId": "5997e33e-df27-4aad-b4ff-00b56894b1bf",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:42:30.073Z"
+    },
+    {
+      "logId": "c6e12a1a-3b1a-4cb5-a437-625f8a5ac826",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:42:39.382Z"
+    },
+    {
+      "logId": "99aef82c-912d-42dc-a9d4-bcd50ccb7194",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T02:42:39.418Z"
+    },
+    {
+      "logId": "cce0a32a-be3c-4be2-ade0-565afbf3ec01",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:42:39.660Z"
+    },
+    {
+      "logId": "afa6a4d7-d2af-4dee-a34d-eaa40016b20e",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T02:42:39.753Z"
+    },
+    {
+      "logId": "40a0bd85-69f4-41ad-8d11-f176d8027474",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:42:39.999Z"
+    },
+    {
+      "logId": "64ec83f6-0474-4e1c-8325-a086f69c73b7",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T02:42:40.031Z"
+    },
+    {
+      "logId": "eff3f31c-a238-4d4f-8b3f-f524abfa8694",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:42:45.684Z"
+    },
+    {
+      "logId": "24357a91-616f-4a25-8b37-fd9008b00fd8",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T02:42:45.704Z"
+    },
+    {
+      "logId": "418f3ab2-c6d0-4801-9dc0-dbad80c5a498",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:45:15.029Z"
+    },
+    {
+      "logId": "d4a10e02-3103-44ed-a42c-35b37d8c454d",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T02:45:15.106Z"
+    },
+    {
+      "logId": "716d794a-cd7b-475e-bd31-d104977edcc8",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:45:24.266Z"
+    },
+    {
+      "logId": "a253b9ce-b60e-4ef6-bb9c-41e16b97154a",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T02:45:24.316Z"
+    },
+    {
+      "logId": "350fbd2f-cde9-47c8-b73d-b080d6e02d4d",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:48:51.408Z"
+    },
+    {
+      "logId": "e46473a8-785c-46d2-97de-47f10f6dca48",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T02:48:51.449Z"
+    },
+    {
+      "logId": "ddd15573-cec3-4829-9dd6-443b88da3ab9",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T02:49:18.781Z"
+    },
+    {
+      "logId": "928a1930-2822-4966-85a1-2ac5c9bbd4d0",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T02:49:18.793Z"
+    },
+    {
+      "logId": "f58138ea-94cf-406f-bdfe-a59a4cf51379",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:34:48.767Z"
+    },
+    {
+      "logId": "ea9a13e7-77e0-4b10-aa1f-e270b746f0f2",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:35:05.754Z"
+    },
+    {
+      "logId": "71cd95aa-dfb5-4277-ab5b-68c2f783af1e",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T07:35:05.768Z"
+    },
+    {
+      "logId": "1a09fbad-4e91-4b3d-822d-25e7db9f2d28",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:35:11.683Z"
+    },
+    {
+      "logId": "72e8f907-63c3-4e25-8f4c-dd9af4d8c06e",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T07:35:11.703Z"
+    },
+    {
+      "logId": "964c146f-0d49-4de5-b06e-7bc0f890890e",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:47:45.208Z"
+    },
+    {
+      "logId": "b5784b77-4234-4531-b63c-47a8b3bf1c4a",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:47:47.907Z"
+    },
+    {
+      "logId": "f5d8e4db-a28d-4f90-a22b-802173f04af6",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T07:47:47.918Z"
+    },
+    {
+      "logId": "d647e2de-2e8d-4d5a-9b98-25fb75cfcf4d",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:47:49.173Z"
+    },
+    {
+      "logId": "a4e69466-6d3e-4f05-a560-8ed0a0ecef6f",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T07:47:49.187Z"
+    },
+    {
+      "logId": "e56aab1d-edac-4e7b-93ed-20c0ef860c54",
+      "adminAction": "registerUser",
+      "detail": "fd376bee-2793-4b65-9655-b100da6f6472 nickname=empty",
+      "timestamp": "2026-08-02T07:48:00.596Z"
+    },
+    {
+      "logId": "ab612ec8-543a-4caa-8ec9-ff021912c966",
+      "adminAction": "recordQuestionOpen",
+      "detail": "fd376bee-2793-4b65-9655-b100da6f6472 viewed q-001",
+      "timestamp": "2026-08-02T07:48:00.615Z"
+    },
+    {
+      "logId": "cf729fe2-c9ee-43d0-b245-7d52915791f5",
+      "adminAction": "registerUser",
+      "detail": "dcb38e2f-e4c5-404f-bae7-65c242098e65 nickname=empty",
+      "timestamp": "2026-08-02T07:52:31.649Z"
+    },
+    {
+      "logId": "fd550e51-537e-4b28-9f5c-c5a45182b1f3",
+      "adminAction": "recordQuestionOpen",
+      "detail": "dcb38e2f-e4c5-404f-bae7-65c242098e65 viewed q-001",
+      "timestamp": "2026-08-02T07:52:31.667Z"
+    },
+    {
+      "logId": "658a629e-dd75-4ae5-8e78-1555508a9988",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:53:26.114Z"
+    },
+    {
+      "logId": "ba4792e4-f343-4af4-ad06-d38366319eb0",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:53:28.287Z"
+    },
+    {
+      "logId": "e8f3eb52-3050-44ff-b28d-c69e898f846b",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T07:53:28.299Z"
+    },
+    {
+      "logId": "d369080a-a01a-4ffc-9f29-7ff18fe4519b",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:53:29.133Z"
+    },
+    {
+      "logId": "53114fd4-8c3b-41b9-9402-9290afcc3302",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T07:53:29.149Z"
+    },
+    {
+      "logId": "46827627-57d2-4d70-9a46-ee64eba692f4",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:53:55.984Z"
+    },
+    {
+      "logId": "c36b6487-d229-4e18-ba6e-b45d5c7fe5b0",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:55:36.366Z"
+    },
+    {
+      "logId": "7025a2b4-a8aa-4ee0-ba8e-9c344c751f87",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T07:55:36.377Z"
+    },
+    {
+      "logId": "bee38298-c072-4a74-9e83-a49a8e9dc6a4",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:56:12.171Z"
+    },
+    {
+      "logId": "79ec90ec-15ef-496f-a1d1-84c61f927d49",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T07:56:12.353Z"
+    },
+    {
+      "logId": "01e29346-6278-485e-8611-6db467e56a8d",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T07:56:12.769Z"
+    },
+    {
+      "logId": "d3aa93c4-94ae-492c-8d41-33605787e644",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T07:56:12.810Z"
+    },
+    {
+      "logId": "40602093-36c1-4353-8016-5e63f36de57e",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:00:31.870Z"
+    },
+    {
+      "logId": "8a72098e-d29e-4281-979f-aaa82a0112c2",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:00:31.888Z"
+    },
+    {
+      "logId": "46fe95c5-86b1-44be-a411-8e86e19377f7",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:00:39.646Z"
+    },
+    {
+      "logId": "e0be301f-54ca-4287-9a05-68374f9634f4",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:00:39.665Z"
+    },
+    {
+      "logId": "c24526be-ff36-44d4-aac7-cfd117bb624c",
+      "adminAction": "registerUser",
+      "detail": "ac4b8fae-be0d-4aed-b8b8-0909b099957c nickname=empty",
+      "timestamp": "2026-08-02T08:02:20.368Z"
+    },
+    {
+      "logId": "62878353-954e-440a-b291-766829884ed9",
+      "adminAction": "recordQuestionOpen",
+      "detail": "ac4b8fae-be0d-4aed-b8b8-0909b099957c viewed q-001",
+      "timestamp": "2026-08-02T08:02:20.460Z"
+    },
+    {
+      "logId": "853e8238-d909-4325-b648-2b40d1c8284d",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:13:07.980Z"
+    },
+    {
+      "logId": "fd58e472-f89f-4d6e-8c50-db72e928dc91",
+      "adminAction": "recordQuestionOpen",
+      "detail": "ac4b8fae-be0d-4aed-b8b8-0909b099957c viewed q-001",
+      "timestamp": "2026-08-02T08:13:08.018Z"
+    },
+    {
+      "logId": "b831fadb-6167-4202-9b84-7524c19c6b2b",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:13:08.055Z"
+    },
+    {
+      "logId": "f985e07a-a9b5-42e4-995b-aa9212bf7e3c",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:27:31.952Z"
+    },
+    {
+      "logId": "0252ac82-18b1-4015-b840-255c5510b1a8",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:27:39.027Z"
+    },
+    {
+      "logId": "5ab2399c-a4a8-4b44-887a-3d7112e300c8",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:28:15.243Z"
+    },
+    {
+      "logId": "11c691d5-a9b1-41f3-a82c-7a10398290b6",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:28:15.260Z"
+    },
+    {
+      "logId": "4d9b82ab-a97a-4855-93b3-37fff76cd6fa",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:28:23.511Z"
+    },
+    {
+      "logId": "bfbec319-6684-490a-822f-23cbad10cdfb",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:28:23.539Z"
+    },
+    {
+      "logId": "12b56c5e-ea55-4bb3-857c-a5bda4b65c5a",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:33:54.746Z"
+    },
+    {
+      "logId": "b90383d5-b8f2-4ebc-a89c-04d7780cdfc7",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:33:54.759Z"
+    },
+    {
+      "logId": "5ed79261-8c07-4cc9-b37b-a7964172021b",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:34:07.402Z"
+    },
+    {
+      "logId": "2610c39b-857a-45d1-a3e4-de6a63bde9b8",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:34:07.422Z"
+    },
+    {
+      "logId": "25e05b11-49c1-42bc-9c91-6835c59c1adb",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:38:52.923Z"
+    },
+    {
+      "logId": "770dceb1-0fc6-4984-a8d5-a8333e3c4f96",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:38:52.942Z"
+    },
+    {
+      "logId": "6e40f9c8-eec5-415b-af19-173db8c3ca24",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:44:23.344Z"
+    },
+    {
+      "logId": "e88827b5-a3f7-4c36-aff2-1d21271842ed",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:44:37.386Z"
+    },
+    {
+      "logId": "d0de9008-1b2d-4f13-a817-03bf7b09b6f7",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:44:47.286Z"
+    },
+    {
+      "logId": "4fd769f9-6f3a-46ca-bb0b-6b77c23f2fbf",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:49:09.962Z"
+    },
+    {
+      "logId": "a52cc93b-6b7a-4586-9bf8-bd56ed638e2e",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:49:10.005Z"
+    },
+    {
+      "logId": "28d19576-5ef7-49de-a6f5-bf6c079774bb",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:51:35.308Z"
+    },
+    {
+      "logId": "969083cb-2def-4033-add7-2f1cac71f2a8",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:51:35.326Z"
+    },
+    {
+      "logId": "c9117c10-83d2-4054-ae85-fa82f8a5761f",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:53:25.031Z"
+    },
+    {
+      "logId": "2aa4e7fc-7fa7-463f-b4df-85886b772269",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:53:25.192Z"
+    },
+    {
+      "logId": "23e4f269-f180-4cc1-8c8a-be054b348f2a",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:54:07.189Z"
+    },
+    {
+      "logId": "ec849024-3dc2-4d81-83ec-ced6288ab9be",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:54:07.218Z"
+    },
+    {
+      "logId": "02eadb57-a6bd-455a-824f-55783f2b7658",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:55:49.381Z"
+    },
+    {
+      "logId": "e56d6c9f-6377-40c0-b128-4e1d9eb1bce0",
+      "adminAction": "recordVisit",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 visited b-01",
+      "timestamp": "2026-08-02T08:55:49.395Z"
+    },
+    {
+      "logId": "eee4402d-99df-42e9-97d8-29226232e374",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:55:53.690Z"
+    },
+    {
+      "logId": "e7dd59ed-e9ac-4080-8e33-5995fbf153ec",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:55:53.738Z"
+    },
+    {
+      "logId": "84f617d4-6635-4b60-8578-d73cc89b131a",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:56:34.257Z"
+    },
+    {
+      "logId": "022e00df-32c0-4b8b-b4bb-ae75aeb12241",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T08:56:34.274Z"
+    },
+    {
+      "logId": "20e913db-105e-4aa5-9efc-0c22b074f287",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:59:18.183Z"
+    },
+    {
+      "logId": "aa3986b8-25ed-44e8-943e-7f2b1433fce2",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:59:37.428Z"
+    },
+    {
+      "logId": "b4aab58e-f702-4fbc-b440-4c0458105410",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:59:39.905Z"
+    },
+    {
+      "logId": "15efd1be-4cff-4d87-9a2d-25caa90209f2",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T08:59:49.289Z"
+    },
+    {
+      "logId": "6d81416e-b1ee-4dac-980e-236b10ad910e",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:11:58.888Z"
+    },
+    {
+      "logId": "d76c868e-60e7-431f-bd9c-2b61e635c734",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:12:25.926Z"
+    },
+    {
+      "logId": "ab0b76a2-2dc7-46aa-9ee6-b687c9b7c544",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:12:44.814Z"
+    },
+    {
+      "logId": "677a50cd-c923-4d8a-a5c3-3d79c8b0fb46",
+      "adminAction": "recordQuestionOpen",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 viewed q-001",
+      "timestamp": "2026-08-02T09:12:44.836Z"
+    },
+    {
+      "logId": "43b4d0a0-59d4-4db3-8f07-75fea7b66d3b",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:15:28.054Z"
+    },
+    {
+      "logId": "063e4af1-77d6-4177-8950-8f5910a68a8f",
+      "adminAction": "registerUser",
+      "detail": "b4ed343b-4647-4b48-9a2a-8f4d1dfe1805 nickname=empty",
+      "timestamp": "2026-08-02T09:15:35.935Z"
+    },
+    {
+      "logId": "e4121ac1-2eea-4855-ad8c-adc8b1d23dda",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T04:57:28.088Z"
+    },
+    {
+      "logId": "eaf1ea2d-e87a-4db3-a18b-c2d2aec4de4f",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T04:57:53.400Z"
+    },
+    {
+      "logId": "45073299-bbbc-4e6c-95fe-129b64d213c9",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T05:22:13.582Z"
+    },
+    {
+      "logId": "2571e6db-a5e1-4d7f-b7ac-2f70c4300127",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T05:57:24.736Z"
+    },
+    {
+      "logId": "f895816c-8b30-458d-b9c1-a032ecd3e5fd",
+      "adminAction": "recordQuestionOpen",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 viewed q-001",
+      "timestamp": "2026-08-04T05:57:24.770Z"
+    },
+    {
+      "logId": "a1737338-d7a6-40ea-a99a-53636fd63eb3",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T05:59:11.540Z"
+    },
+    {
+      "logId": "8cfa12aa-b5cc-4ea4-87ff-7ccecc5ee026",
+      "adminAction": "recordVisit",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 visited b-01",
+      "timestamp": "2026-08-04T05:59:11.640Z"
+    },
+    {
+      "logId": "2265305b-2976-45da-a802-f34622e4fb61",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T05:59:12.046Z"
+    },
+    {
+      "logId": "cfa85509-5366-428b-aa52-36d23610f908",
+      "adminAction": "recordVisit",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 visited b-01",
+      "timestamp": "2026-08-04T05:59:12.094Z"
+    },
+    {
+      "logId": "4aa1c4ee-0c52-480d-bd76-4a9706ef2727",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T05:59:15.891Z"
+    },
+    {
+      "logId": "c642ef75-9882-4137-9ff3-c8e21314b679",
+      "adminAction": "recordQuestionOpen",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 viewed q-002",
+      "timestamp": "2026-08-04T05:59:15.914Z"
+    },
+    {
+      "logId": "0844fd6c-e75f-41cc-bf42-bf2d7f3833c5",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:00:20.548Z"
+    },
+    {
+      "logId": "55090e70-4204-4cf9-873e-8c7f51bd08b4",
+      "adminAction": "recordVisit",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 visited b-01",
+      "timestamp": "2026-08-04T06:00:20.571Z"
+    },
+    {
+      "logId": "984d5a2f-8d6f-479d-b7e1-7822d65675a0",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:24:59.676Z"
+    },
+    {
+      "logId": "7ed09b71-f07c-4850-8a78-05d058a92842",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:25:10.005Z"
+    },
+    {
+      "logId": "689ba23c-63c1-4837-ac44-5ea1221d3f98",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:43:12.008Z"
+    },
+    {
+      "logId": "ffae0ef4-a154-4d30-96ae-03cbb0904086",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:44:31.652Z"
+    },
+    {
+      "logId": "4067433f-771e-47bf-a6e2-1a8d6b2c50fe",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:44:41.938Z"
+    },
+    {
+      "logId": "4873075e-c533-44ca-bcb6-ec4eb5d664ea",
+      "adminAction": "recordVisit",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 visited b-01",
+      "timestamp": "2026-08-04T06:44:41.965Z"
+    },
+    {
+      "logId": "f6cc2296-94c9-4b22-a0b6-79e5af980ab5",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:44:56.852Z"
+    },
+    {
+      "logId": "e0c63472-bb9d-4042-8851-b0cb06ffef85",
+      "adminAction": "recordQuestionOpen",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 viewed q-001",
+      "timestamp": "2026-08-04T06:44:56.904Z"
+    },
+    {
+      "logId": "245ee2b4-be9f-441c-8fcb-4fb629561762",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:57:07.185Z"
+    },
+    {
+      "logId": "a7f9a8db-ac3e-452f-8c55-7006cf6cfbef",
+      "adminAction": "recordQuestionOpen",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 viewed q-001",
+      "timestamp": "2026-08-04T06:57:07.215Z"
+    },
+    {
+      "logId": "30de826a-5359-4e2b-ac75-2232faf29270",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-04T06:57:17.152Z"
+    },
+    {
+      "logId": "284a77d1-3b63-49d6-9548-e6059c7eb034",
+      "adminAction": "recordQuestionOpen",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 viewed q-001",
+      "timestamp": "2026-08-04T06:57:17.241Z"
+    },
+    {
+      "logId": "f30e7a7e-6383-4d50-978c-3182fb990393",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-05T00:24:50.985Z"
+    },
+    {
+      "logId": "c44554f5-23da-4126-9668-ca128a379fa7",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-05T00:25:03.853Z"
+    },
+    {
+      "logId": "081ce915-e7b9-417a-9dc5-1da06aa02e45",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-05T00:25:19.287Z"
+    },
+    {
+      "logId": "0492288a-60c0-4a56-bf3e-e950cc2bee5a",
+      "adminAction": "recordQuestionOpen",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 viewed q-001",
+      "timestamp": "2026-08-05T00:25:19.306Z"
+    },
+    {
+      "logId": "8e4634c7-cb61-450a-aa56-72a09417baec",
+      "adminAction": "registerUser",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 nickname=empty",
+      "timestamp": "2026-08-05T00:25:40.654Z"
+    },
+    {
+      "logId": "c485fce0-a7e6-4ac0-a965-ac546fdd2819",
+      "adminAction": "recordVisit",
+      "detail": "74be2020-49ff-4a87-a4a9-dabf5f001a83 visited b-01",
+      "timestamp": "2026-08-05T00:25:40.674Z"
     }
   ],
   "analytics": []
