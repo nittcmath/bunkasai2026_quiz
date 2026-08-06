@@ -1,11 +1,29 @@
 'use client';
 
-import { BlockMath } from 'react-katex';
+import { useMemo } from 'react';
+import katex from 'katex';
 
 export function MathText({
   value,
 }: {
   value: string;
 }) {
-  return <BlockMath math={value} />;
+  const html = useMemo(() => {
+    try {
+      return katex.renderToString(value, {
+        throwOnError: false,
+        displayMode: true,
+      });
+    } catch {
+      return value;
+    }
+  }, [value]);
+
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: html,
+      }}
+    />
+  );
 }

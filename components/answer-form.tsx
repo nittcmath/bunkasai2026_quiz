@@ -109,7 +109,7 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       setLoading(false);
     }
   }
-  const optionsArray = JSON.parse(question.options) || [];
+  const optionsArray = JSON.parse(question.options.join('')) || [];
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap gap-2">
@@ -122,7 +122,7 @@ export function AnswerForm({ visitorId, question, initialNickname }: Props) {
       </div>
       {optionsArray.length ? (
         <div className="grid gap-2 sm:grid-cols-2">
-          {optionsArray.map((option) => (
+          {optionsArray.map((option: string) => (
             <button
               key={option}
               onClick={() => setAnswer(option)}

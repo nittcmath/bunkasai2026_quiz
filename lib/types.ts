@@ -17,7 +17,7 @@ export type Question = {
   hint: string;
   imageUrl: string;
   correctAnswer: string;
-  options: string;
+  options: string[];
   createdAt: string;
 };
 
