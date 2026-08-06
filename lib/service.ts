@@ -1,4 +1,4 @@
-import { ApiResponse, Booth, Exchange, Question, RankingRow, User, UserHistory } from './types';
+import { ApiResponse, Booth, ExchangeToken, Question, RankingRow, User, UserHistory } from './types';
 import { apiFetch } from './api-client'
 
 export type RequestContext = {
@@ -43,6 +43,37 @@ export async function getUser(
     body: JSON.stringify({
       userId,
     }),
+  });
+}
+
+export async function getExchangeToken(
+  token: string,
+): Promise<
+  ApiResponse<{
+    exchangeToken: {
+      token: string;
+      prizeName: string;
+      cost: number;
+      expireAt: string;
+      used: boolean;
+    };
+  } | null>
+> {
+  return apiFetch<
+    ApiResponse<{
+      exchangeToken: {
+        token: string;
+        prizeName: string;
+        cost: number;
+        expireAt: string;
+        used: boolean;
+      };
+    } | null>
+  >('getExchangeToken', {
+    method: 'GET',
+    query: {
+      token,
+    },
   });
 }
 

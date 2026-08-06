@@ -130,3 +130,4 @@ export type UserHistory = {
   exchanges: Exchange[];
   boothVisits: BoothVisit[];
 };
+

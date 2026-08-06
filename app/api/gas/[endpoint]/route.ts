@@ -79,6 +79,7 @@ export async function POST(request: NextRequest, context: { params: Promise<{ en
     'getQuestion',
     'getBooths',
     'ranking',
+    'getExchangeToken',
     'analytics',
     'getHistory',
   ];

@@ -1,7 +1,10 @@
 import { cookies } from 'next/headers';
 import { notFound } from 'next/navigation';
-import { registerUser } from '@/lib/service';
-import { loadDb } from '@/lib/store';
+import {
+  registerUser,
+  getUser,
+  getExchangeToken,
+} from '@/lib/service';
 import { ExchangeConfirm } from '@/components/exchange-confirm';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -13,12 +16,23 @@ export default async function ExchangePage({ searchParams }: { searchParams: Pro
   if (visitorId) {
     await registerUser(visitorId);
   }
-  const db = await loadDb();
-  const exchangeToken = db.exchangeTokens.find((item) => item.token === token);
+  const exchangeTokenResponse =
+  await getExchangeToken(token);
+
+  const exchangeToken =
+    exchangeTokenResponse.data?.exchangeToken;
+
   if (!exchangeToken) {
     notFound();
   }
-  const user = visitorId ? db.users.find((item) => item.userId === visitorId) : null;
+
+  const userResponse =
+    visitorId
+      ? await getUser(visitorId)
+      : null;
+
+  const user =
+    userResponse?.data?.user ?? null;
   const expired = new Date(exchangeToken.expireAt).getTime() < Date.now();
 
   return (

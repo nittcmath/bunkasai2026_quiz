@@ -87,7 +87,7 @@ export async function apiFetch<T>(endpoint: string, init?: ApiFetchOptions): Pro
     cache: 'no-store',
   });
   const text = await response.text();
-
+  console.log(text);
   const payload = JSON.parse(text);
   if (!response.ok) {
     console.log(response)
