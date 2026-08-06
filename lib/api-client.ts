@@ -4,7 +4,8 @@ type ApiFetchOptions = RequestInit & {
   query?: Record<string, string | number | boolean | null | undefined>;
 };
 
-const isRemoteGasBase = /^https?:\/\//i.test(API_BASE);
+const isRemoteGasBase =
+  typeof window === 'undefined';
 
 function readCookie(name: string) {
   if (typeof document === 'undefined') {
@@ -19,9 +20,16 @@ function readCookie(name: string) {
 
 function buildUrl(endpoint: string, query?: ApiFetchOptions['query']) {
   if (isRemoteGasBase) {
-    const url = new URL(API_BASE);
-    const remoteEndpoint = endpoint.startsWith('admin/') ? endpoint.slice('admin/'.length) : endpoint;
-    url.searchParams.set('endpoint', remoteEndpoint);
+    const url = new URL(
+      process.env.NEXT_PUBLIC_API_BASE_URL!
+    );
+
+    url.searchParams.set(
+      'endpoint',
+      endpoint.startsWith('admin/')
+        ? endpoint.slice('admin/'.length)
+        : endpoint,
+    );
     Object.entries(query ?? {}).forEach(([key, value]) => {
       if (value === null || value === undefined || value === '') return;
       url.searchParams.set(key, String(value));
@@ -42,7 +50,7 @@ function buildUrl(endpoint: string, query?: ApiFetchOptions['query']) {
     return relativeUrl;
   }
 
-  return new URL(relativeUrl, process.env.NEXT_PUBLIC_SITE_URL).toString();
+  return new URL(relativeUrl, process.env.NEXT_PUBLIC_SITE_URL!).toString();
 }
 
 function normalizeBody(endpoint: string, init?: ApiFetchOptions) {
@@ -74,6 +82,7 @@ function normalizeBody(endpoint: string, init?: ApiFetchOptions) {
 export async function apiFetch<T>(endpoint: string, init?: ApiFetchOptions): Promise<T> {
   const method = (init?.method ?? 'GET').toUpperCase();
   const csrfToken = method === 'GET' ? '' : readCookie('csrfToken');
+
   const response = await fetch(buildUrl(endpoint, init?.query), {
     ...init,
     method,
