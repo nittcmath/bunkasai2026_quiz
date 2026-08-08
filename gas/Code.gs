@@ -8,6 +8,7 @@ const SHEETS = {
   exchanges: "Exchanges",
   adminLogs: "AdminLogs",
   analytics: "Analytics",
+  questionViews: "QuestionViews",
 };
 
 const DEFAULT_HEADERS = {
@@ -66,7 +67,16 @@ const DEFAULT_HEADERS = {
   ],
   AdminLogs: ["logId", "adminAction", "detail", "timestamp"],
   Analytics: ["date", "visitors", "answers", "correctRate", "exchangeCount"],
+  QuestionViews: [
+  "viewId",
+  "userId",
+  "questionId",
+  "boothId",
+  "timestamp",
+],
 };
+const ROWS_CACHE = {};
+
 
 function doGet(e) {
   const endpoint = (e && e.parameter && e.parameter.endpoint) || "ranking";
@@ -87,8 +97,6 @@ function handleRequest_(method, endpoint, body, e) {
   ensureSheets_();
   try {
     switch (endpoint) {
-      case "login":
-        return respond_(adminLogin_(body));
       case "registerUser":
         return respond_(registerUser_(body));
       case "getUser":
@@ -101,8 +109,14 @@ function handleRequest_(method, endpoint, body, e) {
         return respond_({
           success: true,
           message: "模擬店一覧を取得しました",
-          data: { booths: sheetData_("Booths") },
+          data: {
+            booths: rows_("Booths"),
+          },
         });
+      case "getBooth":
+        return respond_(getBooth_(body));
+      case "getBoothRanking":
+        return respond_(getBoothRanking_());
       case "getQuestions":
         return respond_(getQuestions_(body));
       case "getQuestion":
@@ -133,12 +147,16 @@ function handleRequest_(method, endpoint, body, e) {
         return respond_(editQuestion_(body));
       case "deleteQuestion":
         return respond_(deleteQuestion_(body));
+      case "recordQuestionOpen":
+        return respond_(recordQuestionOpen_(body));
       case "addBooth":
         return respond_(addBooth_(body));
       case "editBooth":
         return respond_(editBooth_(body));
       case "exportCsv":
         return respond_(exportCsv_());
+      case "getExchangeToken":
+        return respond_(getExchangeToken_(body));
       default:
         return respond_(
           {
@@ -194,21 +212,23 @@ function headers_(name) {
   return DEFAULT_HEADERS[name];
 }
 function rows_(name) {
+  if (ROWS_CACHE[name]) return ROWS_CACHE[name];
+
   const values = sheet_(name).getDataRange().getValues();
   const head = values.shift() || [];
-  return values
-    .filter(function (row) {
-      return row.some(function (cell) {
-        return cell !== "";
-      });
-    })
-    .map(function (row) {
+
+  const result = values
+    .filter(row => row.some(cell => cell !== ""))
+    .map(row => {
       const obj = {};
-      head.forEach(function (key, index) {
+      head.forEach((key, index) => {
         obj[key] = row[index];
       });
       return obj;
     });
+
+  ROWS_CACHE[name] = result;
+  return result;
 }
 function appendRow_(name, values) {
   sheet_(name).appendRow(values);
@@ -271,6 +291,60 @@ function getBoothById_(boothId) {
   );
 }
 
+function getBooth_(params) {
+  const boothId = String(params.boothId || "");
+
+  const booth = getBoothById_(boothId);
+
+  if (!booth) {
+    return apiError_("模擬店が見つかりません");
+  }
+
+  return apiSuccess_("模擬店を取得しました", {
+    booth: {
+      boothId: booth.boothId,
+      boothName: booth.boothName,
+      description: booth.description,
+      location: booth.location,
+    },
+  });
+}
+
+function getBoothRanking_() {
+  try {
+    const visits = rows_('BoothVisits');
+    const booths = rows_('Booths');
+
+    const boothMap = {};
+    booths.forEach(b => {
+      boothMap[b.boothId] = b;
+    });
+
+    const counts = {};
+    visits.forEach(v => {
+      if (!v.boothId) return;
+      counts[v.boothId] = (counts[v.boothId] || 0) + 1;
+    });
+
+    const result = Object.keys(counts)
+      .map(id => {
+        const booth = boothMap[id] || {};
+        return {
+          boothName: booth.boothName || "",
+          description: booth.description || "",
+          location: booth.location || "",
+          count: counts[id],
+        };
+      })
+      .sort((a, b) => b.count - a.count);
+
+    return apiSuccess_('ok', { ranking: result });
+
+  } catch (e) {
+    return apiError_('failed to get ranking', { error: String(e) });
+  }
+}
+
 function ensureUser_(userId, nickname) {
   let user = getUserById_(userId);
   if (!user) {
@@ -324,21 +398,22 @@ function getUser_(body) {
       user: null,
       stats: { answerCount: 0, solvedCount: 0, visitedBooths: 0, rank: 0 },
     });
-  const ranking = buildRanking_();
+  const ranking = buildRankingCached_();
+  const answers = rows_("Answers");
   return apiSuccess_("ユーザー情報を取得しました", {
     user: user,
     stats: {
       answerCount: user.answerCount,
-      solvedCount: rows_("Answers").filter(function (row) {
+      solvedCount: answers.filter(function (row) {
         return row.userId === user.userId && String(row.isCorrect) === "true";
       }).length,
-      answeredQuestionCount: rows_("Answers").filter(function (row) {
+      answeredQuestionCount: answers.filter(function (row) {
         return row.userId === user.userId;
       }).length,
       visitedBooths: String(user.visitedBooths || "")
         .split("|")
         .filter(Boolean).length,
-      openedQuestionCount: rows_("Answers").filter(function (row) {
+      openedQuestionCount: answers.filter(function (row) {
         return row.userId === user.userId;
       }).length,
       rank:
@@ -387,15 +462,57 @@ function recordVisit_(body) {
 
 function getQuestions_(body) {
   const boothId = String(body.boothId || "");
-  const questions = rows_("Questions").filter(function (row) {
+
+  const questions = rows_("Questions")
+  .filter(function(row) {
     return !boothId || row.boothId === boothId;
+  })
+  .map(function(question) {
+    return {
+      questionId: question.questionId,
+      boothId: question.boothId,
+      title: question.title,
+      difficulty: Number(question.difficulty),
+      point: Number(question.point),
+      questionText: question.questionText,
+      hint: question.hint,
+      imageUrl: question.imageUrl,
+      options: normalize_(question.options),
+      createdAt: question.createdAt,
+    };
   });
-  return apiSuccess_("問題一覧を取得しました", { questions: questions });
+
+  return apiSuccess_("問題一覧を取得しました", {
+    questions: questions,
+  });
 }
 
 function getQuestion_(body) {
+  const questionId = String(body.questionId || "");
+
+  const question = rows_("Questions").find(function(row) {
+    return String(row.questionId) === questionId;
+  });
+
+  if (!question) {
+    return apiError_("問題が見つかりません");
+  }
+
   return apiSuccess_("問題を取得しました", {
-    question: getQuestionById_(body.questionId || ""),
+    question: {
+      questionId: question.questionId,
+      boothId: question.boothId,
+      title: question.title,
+      difficulty: Number(question.difficulty),
+      point: Number(question.point),
+      questionText: question.questionText,
+      hint: String(question.hint || ""),
+      imageUrl: String(question.imageUrl || ""),
+      options: question.options
+        ? JSON.parse(question.options)
+        : [],
+      createdAt: question.createdAt,
+    },
   });
 }
 
@@ -435,12 +552,36 @@ function submitAnswer_(body) {
     return row;
   });
   logAdmin_("submitAnswer", userId + " " + questionId + " " + isCorrect);
+  const attempts = rows_("Answers").filter(function(answer) {
+    return (
+      answer.userId === userId &&
+      answer.questionId === question.questionId
+    );
+  }).length;
+
+  if (attempts >= 2) {
+    return apiError_("この問題の回答回数上限に達しました");
+  }
   return apiSuccess_(isCorrect ? "正解です" : "回答を受け付けました", {
     answerId: uuid_(),
     isCorrect: isCorrect,
     earnedPoint: earnedPoint,
     solved: alreadySolved || isCorrect,
   });
+}
+
+function buildRankingCached_() {
+  const cache = CacheService.getScriptCache();
+  const key = "ranking";
+
+  const cached = cache.get(key);
+  if (cached) return JSON.parse(cached);
+
+  const ranking = buildRanking_();
+
+  cache.put(key, JSON.stringify(ranking), 60);
+
+  return ranking;
 }
 
 function buildRanking_() {
@@ -468,9 +609,10 @@ function buildRanking_() {
 }
 
 function getRanking_() {
+  const cachedRankig = buildRankingCached_();
   return apiSuccess_("ランキングを取得しました", {
-    ranking: buildRanking_(),
-    top100: buildRanking_().slice(0, 100),
+    ranking: cachedRankig,
+    top100: cachedRankig.slice(0, 100),
   });
 }
 
@@ -487,6 +629,9 @@ function getHistory_(body) {
       boothVisits: rows_("BoothVisits").filter(function (row) {
         return row.userId === userId;
       }),
+      questionViews: rows_("QuestionViews").filter(function (row) {
+        return row.userId === userId;
+      })
     },
   });
 }
@@ -525,7 +670,7 @@ function redeemExchangeToken_(body) {
   if (new Date(tokenRow.expireAt).getTime() < Date.now())
     return apiError_("交換トークンの期限が切れています");
   if (Number(user.currentPoints || 0) < Number(tokenRow.cost || 0))
-    return apiError_("ポイントが不足しています");
+    return apiError_(`userId:${userId}ポイントが不足しています`);
   updateRowById_("Users", "userId", userId, function (row) {
     row.currentPoints =
       Number(row.currentPoints || 0) - Number(tokenRow.cost || 0);
@@ -606,7 +751,7 @@ function recalculateRanking_() {
   });
   logAdmin_("recalculateRanking", "ranking rebuilt");
   return apiSuccess_("ランキングを再計算しました", {
-    ranking: buildRanking_(),
+    ranking: buildRankingCached_(),
   });
 }
 
@@ -632,18 +777,6 @@ function analytics_() {
       return sum + Number(row.cost || 0);
     }, 0),
   });
-}
-
-function adminLogin_(body) {
-  const password = String(body.password || "");
-  const expected = PropertiesService.getScriptProperties().getProperty(
-    "ADMIN_PASSWORD",
-  );
-  if (!expected || password !== expected) {
-    return apiError_("管理者パスワードが一致しません");
-  }
-  logAdmin_("login", "success");
-  return apiSuccess_("ログインしました", { loggedIn: true });
 }
 
 function searchUsers_(body) {
@@ -773,6 +906,47 @@ function exportCsv_() {
   });
 }
 
+function getExchangeToken_(params) {
+  const token = String(params.token || "");
+
+  const row = rows_("ExchangeTokens").find(function(item) {
+    return item.token === token;
+  });
+
+  if (!row) {
+    return apiError_("交換トークンが見つかりません");
+  }
+
+  return apiSuccess_("交換トークンを取得しました", {
+    exchangeToken: row,
+  });
+}
+
 function logAdmin_(action, detail) {
   appendRow_("AdminLogs", [uuid_(), action, detail, nowIso_()]);
+}
+
+function recordQuestionOpen_(body) {
+  const userId = String(body.userId || "");
+  const questionId = String(body.questionId || "");
+
+  const question = getQuestionById_(questionId);
+
+  if (!question) {
+    return apiError_("問題が見つかりません");
+  }
+
+  appendRow_("QuestionViews", [
+    uuid_(),
+    userId,
+    questionId,
+    question.boothId,
+    nowIso_(),
+  ]);
+
+  logAdmin_("recordQuestionOpen", userId + " " + questionId);
+
+  return apiSuccess_("問題の閲覧を記録しました", {
+    viewId: uuid_(),
+  });
 }
