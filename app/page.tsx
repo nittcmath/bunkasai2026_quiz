@@ -5,8 +5,9 @@ import {
   getUser,
   getRanking,
   getHistory,
-  getBooths,
+  getBooth,
   getQuestions,
+  getBoothRanking,
 } from '@/lib/service';
 ``
 import { Badge } from '@/components/ui/badge';
@@ -15,35 +16,53 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { formatPoints, formatRelative, formatDateTime } from '@/lib/format';
 import { Separator } from '@/components/ui/separator';
 import type { Route } from "next";
+import { Answer, BoothVisit, Booth } from '@/lib/types';
 
 export default async function HomePage() {
   const cookieStore = await cookies();
   const visitorId = cookieStore.get('visitorId')?.value ?? '';
   const nicknameCookie = cookieStore.get('nickname')?.value ?? '';
-  if (visitorId) {
-    await registerUser(visitorId);
-  }
-  const boothsResponse = await getBooths();
-  const questionsResponse = await getQuestions();
+  if (!visitorId) {
+    const registeredUser = await registerUser(visitorId);
 
-  const booths = boothsResponse.data?.booths ?? [];
+    cookieStore.set("visitorId", registeredUser?.data?.user.userId, {
+        httpOnly: true,
+        path: "/",
+        maxAge: 60 * 60 * 24 * 365,
+    });
+  }
+  const [
+    questionsResponse,
+    userResponse,
+    historyResponse,
+    rankingResponse,
+    boothRankingResponse,
+  ] = await Promise.all([
+    getQuestions(),
+    visitorId
+      ? getUser(visitorId)
+      : Promise.resolve(null),
+    visitorId
+      ? getHistory(visitorId)
+      : Promise.resolve(null),
+    getRanking(),
+    getBoothRanking(),
+  ]);
   const questions = questionsResponse.data?.questions ?? [];
-  const userResponse = visitorId ? await getUser(visitorId) : null;
-  const rankingResponse = await getRanking();
-  const historyResponse = visitorId ? await getHistory(visitorId) : null;
   const user = userResponse?.data?.user;
   const stats = userResponse?.data?.stats;
   const ranking = rankingResponse.data?.top100 ?? [];
+  const boothRanking = boothRankingResponse.data?.ranking ?? [];
   const history = historyResponse?.data?.history;
   const userNickname = user?.nickname || nicknameCookie;
   const recentActivity = [
-    ...(history?.answers ?? []).map((answer) => ({
+    ...(history?.answers ?? []).map((answer:Answer) => ({
       type: answer.isCorrect ? '正解' : '回答',
       title: answer.questionId,
       time: answer.timestamp,
     })),
 
-    ...(history?.boothVisits ?? []).map((visit) => ({
+    ...(history?.boothVisits ?? []).map((visit:BoothVisit) => ({
       type: '訪問',
       title: visit.boothId,
       time: visit.timestamp,
@@ -56,14 +75,16 @@ export default async function HomePage() {
   const answeredQuestionCount = stats?.answeredQuestionCount ?? 0;
   const solvedCount = stats?.solvedCount ?? 0;
   const unreadCount = Math.max(0, questions.length - answeredQuestionCount);
-  console.log(user?.visitedBooths);
-  console.log(typeof user?.visitedBooths);
-  console.log(Array.isArray(user?.visitedBooths));
   const visitedBoothIds =
   user?.visitedBooths?.split('|').filter(Boolean) ?? [];
-  const visitedBooths = booths.filter((booth) =>
-    visitedBoothIds.includes(String(booth.boothId))
-  );
+  const visitedBooths = (
+    await Promise.all(
+      visitedBoothIds.map(async (id) => {
+        const res = await getBooth(id);
+        return res.data?.booth;
+      })
+    )
+  ).filter(Boolean);
   const canShowQuestionLinks = visitedBooths.length > 0;
 
   return (
@@ -132,18 +153,17 @@ export default async function HomePage() {
             <CardDescription>訪問数の多い順です。</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
-            {booths.map((booth) => (
-              <div
-                key={booth.boothId}
+            {boothRanking.map((booth:Booth) => (
+              <div 
+                key={`${booth.boothName}`}
                 className="flex items-center justify-between gap-3 rounded-2xl border border-border bg-muted/40 p-3"
               >
                 <div>
                   <p className="font-semibold">
-                    {booth.boothName}
+                    {booth?.boothName}
                   </p>
-
                   <p className="text-xs text-muted-foreground">
-                    {booth.location}
+                    {booth?.location}
                   </p>
                 </div>
               </div>
@@ -180,13 +200,13 @@ export default async function HomePage() {
                 <Separator />
                 {visitedBooths.map((booth) => (
                   <Link
-                    key={booth.boothId}
-                    href={`/booth/${booth.boothId}`}
+                    key={booth?.boothId}
+                    href={`/booth/${booth?.boothId}`}
                     className="flex items-center justify-between rounded-2xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:bg-muted">
                     <div>
-                      <p className="font-semibold">{booth.boothName}</p>
+                      <p className="font-semibold">{booth?.boothName}</p>
                       <p className="text-xs text-muted-foreground">
-                        {booth.description}
+                        {booth?.description}
                       </p>
                     </div>
                     <span className="text-sm text-muted-foreground">

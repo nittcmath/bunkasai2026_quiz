@@ -1,45 +1,60 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { cookies } from 'next/headers';
-import { registerUser, getUser,  getBooths, getQuestions, getHistory } from '@/lib/service';
+import { registerUser, getUser,  getBooth, getQuestions, getHistory } from '@/lib/service';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { formatPoints } from '@/lib/format';
 import { RecordVisit } from '@/components/record-visit';
+import { Answer } from '@/lib/types';
 
 export default async function BoothPage({ params }: { params: Promise<{ boothId: string }> }) {
   const { boothId } = await params;
   const cookieStore = await cookies();
   const visitorId = cookieStore.get('visitorId')?.value ?? '';
-  if (visitorId) {
-    await registerUser(visitorId);
+  if (!visitorId) {
+    const registeredUser = await registerUser(visitorId);
+
+    cookieStore.set("visitorId", registeredUser?.data?.user.userId, {
+        httpOnly: true,
+        path: "/",
+        maxAge: 60 * 60 * 24 * 365,
+    });
   }
-  const boothsResponse = await getBooths();
-  const questionsResponse = await getQuestions(boothId);
 
-  const booths = boothsResponse.data?.booths ?? [];
+  const [
+    questionsResponse,
+    boothResponse,
+    userResponse,
+    history,
+  ] = await Promise.all([
+    getQuestions(boothId),
+    getBooth(boothId),
+    visitorId
+    ? getUser(visitorId)
+    : Promise.resolve(null),
+  visitorId
+    ? getHistory(visitorId)
+    : Promise.resolve(null),
+
+  ]);
+
   const questions = questionsResponse.data?.questions ?? [];
-
-  const booth =
-    booths.find((item) => item.boothId === boothId) ?? null;
+  const booth = boothResponse.data?.booth ?? null;
+  const user = userResponse?.data?.user ?? null;
 
   if (!booth) {
     notFound();
   }
-  const user = visitorId ? (await getUser(visitorId)).data?.user : null;
-  const history =
-    visitorId
-      ? (await getHistory(visitorId)).data?.history
-      : null;
   const solvedQuestionIds = new Set(
-    (history?.answers ?? [])
-      .filter((answer) => answer.isCorrect)
-      .map((answer) => answer.questionId)
+    (history?.data?.history.answers ?? [])
+      .filter((answer:Answer) => answer.isCorrect)
+      .map((answer:Answer) => answer.questionId)
   );
   const answeredQuestionIds = new Set(
-    (history?.answers ?? [])
-      .map((answer) => answer.questionId)
+    (history?.data?.history.answers ?? [])
+      .map((answer:Answer) => answer.questionId)
   );
   const grouped = questions.reduce<Record<number, typeof questions>>((acc, question) => {
     acc[question.difficulty] = [...(acc[question.difficulty] ?? []), question];

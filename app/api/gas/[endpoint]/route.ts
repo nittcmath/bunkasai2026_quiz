@@ -105,6 +105,7 @@ export async function POST(request: NextRequest, context: { params: Promise<{ en
     'generateExchangeToken',
     'recalculateRanking',
     'exportCsv',
+    'getBooths',
   ];
   if (  ADMIN_ENDPOINTS.includes(endpoint) && !adminGuard(request)) {
   return json(

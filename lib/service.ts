@@ -149,6 +149,20 @@ export async function getBooth(
   );
 }
 
+export async function getBoothRanking(): Promise<
+  ApiResponse<{
+    ranking: Booth[];
+  }>
+> {
+  return apiFetch<
+    ApiResponse<{
+      ranking: Booth[];
+    }>
+  >('getBoothRanking', {
+    method: 'GET',
+  });
+}
+
 export async function getQuestions(
   boothId?: string,
 ): Promise<ApiResponse<{ questions: Question[] }>> {

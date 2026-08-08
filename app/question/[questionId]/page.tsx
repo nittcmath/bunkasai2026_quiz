@@ -20,13 +20,28 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
   const cookieStore = await cookies();
   const visitorId = cookieStore.get('visitorId')?.value ?? '';
   const nicknameCookie = cookieStore.get('nickname')?.value ?? '';
-  if (visitorId) {
-    await registerUser(visitorId);
+  if (!visitorId) {
+    const registeredUser = await registerUser(visitorId);
+
+    cookieStore.set("visitorId", registeredUser?.data?.user.userId, {
+        httpOnly: true,
+        path: "/",
+        maxAge: 60 * 60 * 24 * 365,
+    });
   }
-
-  const questionResponse =
-    await getQuestion(questionId);
-
+const [
+  questionResponse,
+  userResponse,
+  historyResponse,
+] = await Promise.all([
+  getQuestion(questionId),
+  visitorId
+    ? getUser(visitorId)
+    : Promise.resolve(null),
+  visitorId
+    ? getHistory(visitorId)
+    : Promise.resolve(null),
+]);
   const question =
     questionResponse.data?.question ?? null;
 
@@ -42,16 +57,6 @@ export default async function QuestionPage({ params }: { params: Promise<{ quest
   if (!booth) {
     throw new Error("booth is null");
   }
-
-  const userResponse =
-    visitorId
-      ? await getUser(visitorId)
-      : null;
-
-  const historyResponse = visitorId
-    ? await getHistory(visitorId)
-    : null;
-
   const user =
     userResponse?.data?.user ?? null;
   const initialNickname = user?.nickname || nicknameCookie;
