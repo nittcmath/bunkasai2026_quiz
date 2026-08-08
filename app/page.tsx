@@ -36,7 +36,6 @@ export default async function HomePage() {
   const ranking = rankingResponse.data?.top100 ?? [];
   const history = historyResponse?.data?.history;
   const userNickname = user?.nickname || nicknameCookie;
-  const canShowQuestionLinks = Boolean(visitorId && booths.length && user?.visitedBooths.length);
   const recentActivity = [
     ...(history?.answers ?? []).map((answer) => ({
       type: answer.isCorrect ? '正解' : '回答',
@@ -56,7 +55,16 @@ export default async function HomePage() {
     .slice(0, 6);
   const answeredQuestionCount = stats?.answeredQuestionCount ?? 0;
   const solvedCount = stats?.solvedCount ?? 0;
- const unreadCount = Math.max(0, questions.length - answeredQuestionCount);
+  const unreadCount = Math.max(0, questions.length - answeredQuestionCount);
+  console.log(user?.visitedBooths);
+  console.log(typeof user?.visitedBooths);
+  console.log(Array.isArray(user?.visitedBooths));
+  const visitedBoothIds =
+  user?.visitedBooths?.split('|').filter(Boolean) ?? [];
+  const visitedBooths = booths.filter((booth) =>
+    visitedBoothIds.includes(String(booth.boothId))
+  );
+  const canShowQuestionLinks = visitedBooths.length > 0;
 
   return (
     <div className="space-y-8 animate-fadeUp">
@@ -170,13 +178,20 @@ export default async function HomePage() {
             {canShowQuestionLinks ? (
               <>
                 <Separator />
-                {booths.map((booth) => (
-                  <Link key={booth.boothId} href={`/booth/${booth.boothId}`} className="flex items-center justify-between rounded-2xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:bg-muted">
+                {visitedBooths.map((booth) => (
+                  <Link
+                    key={booth.boothId}
+                    href={`/booth/${booth.boothId}`}
+                    className="flex items-center justify-between rounded-2xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:bg-muted">
                     <div>
                       <p className="font-semibold">{booth.boothName}</p>
-                      <p className="text-xs text-muted-foreground">{booth.description}</p>
+                      <p className="text-xs text-muted-foreground">
+                        {booth.description}
+                      </p>
                     </div>
-                    <span className="text-sm text-muted-foreground">問題を見る</span>
+                    <span className="text-sm text-muted-foreground">
+                      問題を見る
+                    </span>
                   </Link>
                 ))}
               </>

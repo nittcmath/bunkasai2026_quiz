@@ -30,7 +30,7 @@ export type User = {
   currentPoints: number;
   correctCount: number;
   answerCount: number;
-  visitedBooths: string[];
+  visitedBooths: string;
   lastActivity: string;
   lastIp?: string;
 };
